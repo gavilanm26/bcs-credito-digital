@@ -1,0 +1,82 @@
+com/bcs/certification/digitalloan/tasks/offer.java
+ com.bcs.certification.digitalloan.tasks.offer
+com/bcs/certification/digitalloan/UI/digitalLoanURL.java
+ com.bcs.certification.digitalloan.UI.digitalLoanURL
+com/bcs/certification/digitalloan/utils/customrunner/customRunner.java
+ com.bcs.certification.digitalloan.utils.customrunner.customRunner
+com/bcs/certification/digitalloan/tasks/congratulations.java
+ com.bcs.certification.digitalloan.tasks.congratulations
+com/bcs/certification/digitalloan/questions/congratulationsQuestion.java
+ com.bcs.certification.digitalloan.questions.congratulationsQuestion
+com/bcs/certification/digitalloan/questions/summaryQuestion.java
+ com.bcs.certification.digitalloan.questions.summaryQuestion
+com/bcs/certification/digitalloan/UI/congratulationsUI.java
+ com.bcs.certification.digitalloan.UI.congratulationsUI
+com/bcs/certification/digitalloan/interactions/ResponsiveDesignTesting.java
+ com.bcs.certification.digitalloan.interactions.ResponsiveDesignTesting
+com/bcs/certification/digitalloan/questions/onboardingQuestion.java
+ com.bcs.certification.digitalloan.questions.onboardingQuestion
+com/bcs/certification/digitalloan/tasks/otp.java
+ com.bcs.certification.digitalloan.tasks.otp
+com/bcs/certification/digitalloan/tasks/summary.java
+ com.bcs.certification.digitalloan.tasks.summary
+com/bcs/certification/digitalloan/tasks/accounts.java
+ com.bcs.certification.digitalloan.tasks.accounts
+com/bcs/certification/digitalloan/UI/offerUI.java
+ com.bcs.certification.digitalloan.UI.offerUI
+com/bcs/certification/digitalloan/questions/accountQuestion.java
+ com.bcs.certification.digitalloan.questions.accountQuestion
+com/bcs/certification/digitalloan/tasks/toAccess.java
+ com.bcs.certification.digitalloan.tasks.toAccess
+com/bcs/certification/digitalloan/UI/promissoryNoteUI.java
+ com.bcs.certification.digitalloan.UI.promissoryNoteUI
+com/bcs/certification/digitalloan/utils/hasletters/hasLetters.java
+ com.bcs.certification.digitalloan.utils.hasletters.hasLetters
+com/bcs/certification/digitalloan/UI/otpUI.java
+ com.bcs.certification.digitalloan.UI.otpUI
+com/bcs/certification/digitalloan/questions/lifeInsuranceQuestion.java
+ com.bcs.certification.digitalloan.questions.lifeInsuranceQuestion
+com/bcs/certification/digitalloan/UI/summaryUI.java
+ com.bcs.certification.digitalloan.UI.summaryUI
+com/bcs/certification/digitalloan/tasks/onboarding.java
+ com.bcs.certification.digitalloan.tasks.onboarding
+com/bcs/certification/digitalloan/tasks/lifeInsurance.java
+ com.bcs.certification.digitalloan.tasks.lifeInsurance
+com/bcs/certification/digitalloan/utils/exceldata/readExcelFile.java
+ com.bcs.certification.digitalloan.utils.exceldata.readExcelFile
+com/bcs/certification/digitalloan/questions/offerQuestion.java
+ com.bcs.certification.digitalloan.questions.offerQuestion
+com/bcs/certification/digitalloan/questions/modalQualifyQuestion.java
+ com.bcs.certification.digitalloan.questions.modalQualifyQuestion
+com/bcs/certification/digitalloan/tasks/promissoryNote.java
+ com.bcs.certification.digitalloan.tasks.promissoryNote
+com/bcs/certification/digitalloan/UI/accountsUI.java
+ com.bcs.certification.digitalloan.UI.accountsUI
+com/bcs/certification/digitalloan/utils/exceldata/dataToFeature.java
+ com.bcs.certification.digitalloan.utils.exceldata.dataToFeature
+com/bcs/certification/digitalloan/models/dataList.java
+ com.bcs.certification.digitalloan.models.dataList
+com/bcs/certification/digitalloan/questions/promissoryNoteQuestion.java
+ com.bcs.certification.digitalloan.questions.promissoryNoteQuestion
+com/bcs/certification/digitalloan/UI/lifeInsuranceUI.java
+ com.bcs.certification.digitalloan.UI.lifeInsuranceUI
+com/bcs/certification/digitalloan/questions/otpQuestion.java
+ com.bcs.certification.digitalloan.questions.otpQuestion
+com/bcs/certification/digitalloan/UI/onboardingUI.java
+ com.bcs.certification.digitalloan.UI.onboardingUI
+com/bcs/certification/digitalloan/UI/channelsUI.java
+ com.bcs.certification.digitalloan.UI.channelsUI
+com/bcs/certification/digitalloan/questions/buttonDisableQuestion.java
+ com.bcs.certification.digitalloan.questions.buttonDisableQuestion
+com/bcs/certification/digitalloan/questions/channelsQuestion.java
+ com.bcs.certification.digitalloan.questions.channelsQuestion
+com/bcs/certification/digitalloan/questions/messagesQuestion.java
+ com.bcs.certification.digitalloan.questions.messagesQuestion
+com/bcs/certification/digitalloan/UI/loginUI.java
+ com.bcs.certification.digitalloan.UI.loginUI
+com/bcs/certification/digitalloan/tasks/login.java
+ com.bcs.certification.digitalloan.tasks.login
+com/bcs/certification/digitalloan/tasks/channels.java
+ com.bcs.certification.digitalloan.tasks.channels
+com/bcs/certification/digitalloan/questions/loginQuestion.java
+ com.bcs.certification.digitalloan.questions.loginQuestion

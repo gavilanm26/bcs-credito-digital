@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="4" name="login screen validation Bank Caja Social - digital loan" skipped="0" tests="6" time="121.88" timestamp="2022-06-24 03:30:09"><testcase name="Validation Messages"><failure message="Expected messages question&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Expected messages question
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;</failure><system-err>Expected messages question
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+com.bcs.certification.digitalloan.stepdefinitions.e2eLoginStepStep.theDifferentMessagesAreValidated(e2eLoginStepStep.java:43)&#13;
+✽.the different messages are validated Mínimo 8 caracteres(src/test/resources/features/e2e-login.feature:38)&#13;
+</system-err></testcase></testsuite>

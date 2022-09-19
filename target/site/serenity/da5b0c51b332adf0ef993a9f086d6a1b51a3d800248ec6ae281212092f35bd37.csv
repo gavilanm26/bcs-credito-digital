@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"login screen validation Bank Caja Social - digital loan","Alone IdType","ERROR","2022-06-21T16:56:22.062-05:00[America/Bogota]","0.0","94.2"
+"onboarding screen validation Bank Caja Social - digital loan","Button 1","FAILURE","2022-06-21T14:05:58.615-05:00[America/Bogota]","0.0","29.55"
+"complete process to acquire a digital loan","digital loan","FAILURE","2022-06-21T11:03:38.657-05:00[America/Bogota]","0.0","28.89"

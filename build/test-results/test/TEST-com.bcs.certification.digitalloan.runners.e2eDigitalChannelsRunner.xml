@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bcs.certification.digitalloan.runners.e2eDigitalChannelsRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="GAVILAN" time="0.0">
+  <properties/>
+  <system-out><![CDATA[
+1 Scenarios (1 passed)
+3 Steps (3 passed)
+0m31,661s
+
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[96m
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+ Learn Serenity BDD online at http://serenity-dojo.com                               
+-------------------------------------------------------------------------------------
+?[0m
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: screen to validate whether or not you have digital channels
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+Cleaning up unclosed ZipFile for archive D:\escritorio\bcs-loans-qa\.\src\test\resources\datadriven\login\testData.xlsx
+Cleaning up unclosed ZipFile for archive D:\escritorio\bcs-loans-qa\.\src\test\resources\datadriven\login\testData.xlsx
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: screen to validate whether or not you have digital channels
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: with digital channels
+-------------------------------------------------------------------(screen-to-validate-whether-or-not-you-have-digital-channels;with-digital-channels)
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Example: {textOnboarding=Tiene un crédito preaprobado de libre inversión, textLogin=Para comenzar ingrese su tipo y número de documento, idType=Cédula de ciudadanía, idNumber=41728985, txtPassword=Ingrese la contraseña}
+]]></system-err>
+</testsuite>

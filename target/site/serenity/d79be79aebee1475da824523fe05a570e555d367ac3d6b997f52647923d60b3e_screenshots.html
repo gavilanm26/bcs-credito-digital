@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">BCS Préstamo Digital</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="f539cfeadb849866947a9b9756eac1bf42cfe88e811efdddb60a88528b8fe560.html">Login Screen Validation Bank Caja Social - Digital Loan</a></span>
+                > <span class="truncate-60"><a
+                    href="d79be79aebee1475da824523fe05a570e555d367ac3d6b997f52647923d60b3e.html">Validation Messages </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 24-06-2022 15:30</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Login Screen Validation Bank Caja Social - Digital Loan </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As: a bank customer<br />
+I want: to be on the login screen<br />
+To: perform all validations
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="af860926a229cfaee5b7c669e2d69b90223107f887df83a510a5522a2732687d.html">Loginvalidationsmessages
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="773a571d092c5846a3019576b732f5fa2a9b129891c011c10cda8839a7f193e0.html">Regresion
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">Validation Messages
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given given i entered the login url &lt;textOnboarding&gt;<br>When I fill in the login fields &lt;idType&gt;, &lt;idNumber&gt;, &lt;Password&gt;, &lt;textLogin&gt;<br>Then the different messages are validated &lt;message&gt;</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: Expected messages questionExpected: is (true) but: was (false)</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.bcs.certification.digitalloan.stepdefinitions.e2eLoginStepStep.theDifferentMessagesAreValidated(e2eLoginStepStep.java:43)<br />✽.the different messages are validated Mínimo 8 caracteres(src/test/resources/features/e2e-login.feature:38)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource8433580227913258284.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Example: {textOnboarding=Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n, textLogin=Iniciar sesi&oacute;n, idType=C&eacute;dula de ciudadan&iacute;a, idNumber=12, Password=contra12, message=M&iacute;nimo 3 caracteres}" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Given given i entered the login url Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Actor to access" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" actor opens the Digital loan URL" width="1366"/>
+                <img src="3fe85d9336e852af50c0951f6fe6580cc22b606155c8df4a117eb50979b405da.png" title=" Actor to access (completed)" width="1366"/>
+                <img src="3af7fe4eee50381d9dd7b5270d7ebd26f020521882384bffceeeff11d6b48c0d.png" title=" Then onboarding question" width="1366"/>
+                <img src="3af7fe4eee50381d9dd7b5270d7ebd26f020521882384bffceeeff11d6b48c0d.png" title=" Then onboarding question (completed)" width="1366"/>
+                <img src="3af7fe4eee50381d9dd7b5270d7ebd26f020521882384bffceeeff11d6b48c0d.png" title=" Actor onboarding" width="1366"/>
+                <img src="3af7fe4eee50381d9dd7b5270d7ebd26f020521882384bffceeeff11d6b48c0d.png" title=" actor clicks on Button verifique aqui" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" actor clicks on Button verifique aqui" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" actor clicks on Button verifique aqui (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Actor onboarding (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Given given i entered the login url Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" When I fill in the login fields C&eacute;dula de ciudadan&iacute;a, 12, contra12, Iniciar sesi&oacute;n" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Then login question" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Then login question (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Actor login" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" actor enters 'C&eacute;dula de ciudadan&iacute;a' into Select ID Type" width="1366"/>
+                <img src="2864231241cf9daef46b248c8c42cc35f35c0e9f021bf7531e1956bb3ef9ec1a.png" title=" actor enters 'C&eacute;dula de ciudadan&iacute;a' into Select ID Type (completed)" width="1366"/>
+                <img src="2864231241cf9daef46b248c8c42cc35f35c0e9f021bf7531e1956bb3ef9ec1a.png" title=" actor enters '12' into Enter User" width="1366"/>
+                <img src="a23d58505fe0822843f485a3056540ea5768285a366818d4a1a4a74b4aae7e82.png" title=" actor enters '12' into Enter User (completed)" width="1366"/>
+                <img src="a23d58505fe0822843f485a3056540ea5768285a366818d4a1a4a74b4aae7e82.png" title=" actor enters 'contra12' into Enter Password" width="1366"/>
+                <img src="6132d5484fbf14fc35242bf5c5c0f8a15f1b88953a7128038db05b264c722523.png" title=" actor enters 'contra12' into Enter Password (completed)" width="1366"/>
+                <img src="6132d5484fbf14fc35242bf5c5c0f8a15f1b88953a7128038db05b264c722523.png" title=" Actor login (completed)" width="1366"/>
+                <img src="6132d5484fbf14fc35242bf5c5c0f8a15f1b88953a7128038db05b264c722523.png" title=" When I fill in the login fields C&eacute;dula de ciudadan&iacute;a, 12, contra12, Iniciar sesi&oacute;n (completed)" width="1366"/>
+                <img src="4c527022a3cd24f60a123b998a16b4791e5ec8c4ef6ea71c4a9012b455279e36.png" title=" Then the different messages are validated M&iacute;nimo 3 caracteres" width="1366"/>
+                <img src="4c527022a3cd24f60a123b998a16b4791e5ec8c4ef6ea71c4a9012b455279e36.png" title=" Then messages question" width="1366"/>
+                <img src="6132d5484fbf14fc35242bf5c5c0f8a15f1b88953a7128038db05b264c722523.png" title=" Then messages question (completed)" width="1366"/>
+                <img src="6132d5484fbf14fc35242bf5c5c0f8a15f1b88953a7128038db05b264c722523.png" title=" Then the different messages are validated M&iacute;nimo 3 caracteres (completed)" width="1366"/>
+                <img src="6132d5484fbf14fc35242bf5c5c0f8a15f1b88953a7128038db05b264c722523.png" title=" Example: {textOnboarding=Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n, textLogin=Iniciar sesi&oacute;n, idType=C&eacute;dula de ciudadan&iacute;a, idNumber=12, Password=contra12, message=M&iacute;nimo 3 caracteres} (completed)" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Example: {textOnboarding=Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n, textLogin=Iniciar sesi&oacute;n, idType=C&eacute;dula de extranjer&iacute;a, idNumber=12, Password=contra12, message=M&iacute;nimo 3 caracteres}" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Given given i entered the login url Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Actor to access" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" actor opens the Digital loan URL" width="1366"/>
+                <img src="92d7cbf745a154c1458930e017269caed317a92a4d5ce5ccd62a3abd818bc74e.png" title=" Actor to access (completed)" width="1366"/>
+                <img src="92d7cbf745a154c1458930e017269caed317a92a4d5ce5ccd62a3abd818bc74e.png" title=" Then onboarding question" width="1366"/>
+                <img src="92d7cbf745a154c1458930e017269caed317a92a4d5ce5ccd62a3abd818bc74e.png" title=" Then onboarding question (completed)" width="1366"/>
+                <img src="92d7cbf745a154c1458930e017269caed317a92a4d5ce5ccd62a3abd818bc74e.png" title=" Actor onboarding" width="1366"/>
+                <img src="92d7cbf745a154c1458930e017269caed317a92a4d5ce5ccd62a3abd818bc74e.png" title=" actor clicks on Button verifique aqui" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" actor clicks on Button verifique aqui" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" actor clicks on Button verifique aqui (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Actor onboarding (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Given given i entered the login url Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" When I fill in the login fields C&eacute;dula de extranjer&iacute;a, 12, contra12, Iniciar sesi&oacute;n" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Then login question" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Then login question (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Actor login" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" actor enters 'C&eacute;dula de extranjer&iacute;a' into Select ID Type" width="1366"/>
+                <img src="87b9ceeec2b5c77fa1e796586608c3c402fa373da789f29279681431caf24e42.png" title=" actor enters 'C&eacute;dula de extranjer&iacute;a' into Select ID Type (completed)" width="1366"/>
+                <img src="87b9ceeec2b5c77fa1e796586608c3c402fa373da789f29279681431caf24e42.png" title=" actor enters '12' into Enter User" width="1366"/>
+                <img src="bd3ab8cfa42feea21ee3c40d670ca4c82b76b4e311fe8d7337e5c2071e435707.png" title=" actor enters '12' into Enter User (completed)" width="1366"/>
+                <img src="bd3ab8cfa42feea21ee3c40d670ca4c82b76b4e311fe8d7337e5c2071e435707.png" title=" actor enters 'contra12' into Enter Password" width="1366"/>
+                <img src="778f8581f949b2ba75d928d34582aa87cb1e678dfc3497c4b58b309159b77a0c.png" title=" actor enters 'contra12' into Enter Password (completed)" width="1366"/>
+                <img src="778f8581f949b2ba75d928d34582aa87cb1e678dfc3497c4b58b309159b77a0c.png" title=" Actor login (completed)" width="1366"/>
+                <img src="778f8581f949b2ba75d928d34582aa87cb1e678dfc3497c4b58b309159b77a0c.png" title=" When I fill in the login fields C&eacute;dula de extranjer&iacute;a, 12, contra12, Iniciar sesi&oacute;n (completed)" width="1366"/>
+                <img src="90acc028e08b0064663e3762d0ec6481e911da737443496ce8b615cd262900eb.png" title=" Then the different messages are validated M&iacute;nimo 3 caracteres" width="1366"/>
+                <img src="90acc028e08b0064663e3762d0ec6481e911da737443496ce8b615cd262900eb.png" title=" Then messages question" width="1366"/>
+                <img src="778f8581f949b2ba75d928d34582aa87cb1e678dfc3497c4b58b309159b77a0c.png" title=" Then messages question (completed)" width="1366"/>
+                <img src="778f8581f949b2ba75d928d34582aa87cb1e678dfc3497c4b58b309159b77a0c.png" title=" Then the different messages are validated M&iacute;nimo 3 caracteres (completed)" width="1366"/>
+                <img src="778f8581f949b2ba75d928d34582aa87cb1e678dfc3497c4b58b309159b77a0c.png" title=" Example: {textOnboarding=Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n, textLogin=Iniciar sesi&oacute;n, idType=C&eacute;dula de extranjer&iacute;a, idNumber=12, Password=contra12, message=M&iacute;nimo 3 caracteres} (completed)" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Example: {textOnboarding=Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n, textLogin=Iniciar sesi&oacute;n, idType=Usuario, idNumber=mauro28, Password=contra12, message=M&iacute;nimo 8 caracteres}" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Given given i entered the login url Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Actor to access" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" actor opens the Digital loan URL" width="1366"/>
+                <img src="ce81fe6e6ac3a0959ebd89bbe3841ab8916842bae0ba2c3162031940f5dc48ea.png" title=" Actor to access (completed)" width="1366"/>
+                <img src="3af7fe4eee50381d9dd7b5270d7ebd26f020521882384bffceeeff11d6b48c0d.png" title=" Then onboarding question" width="1366"/>
+                <img src="3af7fe4eee50381d9dd7b5270d7ebd26f020521882384bffceeeff11d6b48c0d.png" title=" Then onboarding question (completed)" width="1366"/>
+                <img src="3af7fe4eee50381d9dd7b5270d7ebd26f020521882384bffceeeff11d6b48c0d.png" title=" Actor onboarding" width="1366"/>
+                <img src="3af7fe4eee50381d9dd7b5270d7ebd26f020521882384bffceeeff11d6b48c0d.png" title=" actor clicks on Button verifique aqui" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" actor clicks on Button verifique aqui" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" actor clicks on Button verifique aqui (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Actor onboarding (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Given given i entered the login url Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" When I fill in the login fields Usuario, mauro28, contra12, Iniciar sesi&oacute;n" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Then login question" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Then login question (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Actor login" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" actor enters 'Usuario' into Select ID Type" width="1366"/>
+                <img src="dcbdcebab3dd469a798036d753061c1f0f60037527a8b3207e405ab7ea5bedf7.png" title=" actor enters 'Usuario' into Select ID Type (completed)" width="1366"/>
+                <img src="dcbdcebab3dd469a798036d753061c1f0f60037527a8b3207e405ab7ea5bedf7.png" title=" actor enters 'mauro28' into Enter User" width="1366"/>
+                <img src="b4be25159f8b2d3e9b032d65075b67b49f9c5e5ffd8f6931e72755f141711116.png" title=" actor enters 'mauro28' into Enter User (completed)" width="1366"/>
+                <img src="b4be25159f8b2d3e9b032d65075b67b49f9c5e5ffd8f6931e72755f141711116.png" title=" actor enters 'contra12' into Enter Password" width="1366"/>
+                <img src="9bb462f23f7e17bee6eb5b3db9ff4abe8686354eacef5b05498b3aab2f060f09.png" title=" actor enters 'contra12' into Enter Password (completed)" width="1366"/>
+                <img src="9bb462f23f7e17bee6eb5b3db9ff4abe8686354eacef5b05498b3aab2f060f09.png" title=" Actor login (completed)" width="1366"/>
+                <img src="9bb462f23f7e17bee6eb5b3db9ff4abe8686354eacef5b05498b3aab2f060f09.png" title=" When I fill in the login fields Usuario, mauro28, contra12, Iniciar sesi&oacute;n (completed)" width="1366"/>
+                <img src="e08b22a1928a3fbe22d826373423864aca61e8681399727743672682e9453fb2.png" title=" Then the different messages are validated M&iacute;nimo 8 caracteres" width="1366"/>
+                <img src="e08b22a1928a3fbe22d826373423864aca61e8681399727743672682e9453fb2.png" title=" Then messages question" width="1366"/>
+                <img src="e08b22a1928a3fbe22d826373423864aca61e8681399727743672682e9453fb2.png" title=" Then messages question (completed)" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Example: {textOnboarding=Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n, textLogin=Iniciar sesi&oacute;n, idType=C&eacute;dula de ciudadan&iacute;a, idNumber=1039458363, Password=contr, message=M&iacute;nimo 8 caracteres}" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Given given i entered the login url Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Actor to access" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" actor opens the Digital loan URL" width="1366"/>
+                <img src="5c0f80d3258c6afa00b47913f319cf868334a99d7cbc26a874fbe9af74553fcd.png" title=" Actor to access (completed)" width="1366"/>
+                <img src="92d7cbf745a154c1458930e017269caed317a92a4d5ce5ccd62a3abd818bc74e.png" title=" Then onboarding question" width="1366"/>
+                <img src="92d7cbf745a154c1458930e017269caed317a92a4d5ce5ccd62a3abd818bc74e.png" title=" Then onboarding question (completed)" width="1366"/>
+                <img src="92d7cbf745a154c1458930e017269caed317a92a4d5ce5ccd62a3abd818bc74e.png" title=" Actor onboarding" width="1366"/>
+                <img src="92d7cbf745a154c1458930e017269caed317a92a4d5ce5ccd62a3abd818bc74e.png" title=" actor clicks on Button verifique aqui" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" actor clicks on Button verifique aqui" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" actor clicks on Button verifique aqui (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Actor onboarding (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Given given i entered the login url Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" When I fill in the login fields C&eacute;dula de ciudadan&iacute;a, 1039458363, contr, Iniciar sesi&oacute;n" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Then login question" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Then login question (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Actor login" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" actor enters 'C&eacute;dula de ciudadan&iacute;a' into Select ID Type" width="1366"/>
+                <img src="2864231241cf9daef46b248c8c42cc35f35c0e9f021bf7531e1956bb3ef9ec1a.png" title=" actor enters 'C&eacute;dula de ciudadan&iacute;a' into Select ID Type (completed)" width="1366"/>
+                <img src="2864231241cf9daef46b248c8c42cc35f35c0e9f021bf7531e1956bb3ef9ec1a.png" title=" actor enters '1039458363' into Enter User" width="1366"/>
+                <img src="04af065bdf89513f9d3a74dcae68dac5bf8cae190e83da033b8832f4958adf41.png" title=" actor enters '1039458363' into Enter User (completed)" width="1366"/>
+                <img src="04af065bdf89513f9d3a74dcae68dac5bf8cae190e83da033b8832f4958adf41.png" title=" actor enters 'contr' into Enter Password" width="1366"/>
+                <img src="a24b64f45f5d076d96c9c530aa7e351fa89efd65356c1ad876d4c7462b30eebc.png" title=" actor enters 'contr' into Enter Password (completed)" width="1366"/>
+                <img src="a24b64f45f5d076d96c9c530aa7e351fa89efd65356c1ad876d4c7462b30eebc.png" title=" actor clicks on Button Continue" width="1366"/>
+                <img src="a24b64f45f5d076d96c9c530aa7e351fa89efd65356c1ad876d4c7462b30eebc.png" title=" actor clicks on Button Continue (completed)" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Example: {textOnboarding=Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n, textLogin=Iniciar sesi&oacute;n, idType=C&eacute;dula de extranjer&iacute;a, idNumber=1039458363, Password=contr, message=M&iacute;nimo 8 caracteres}" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Given given i entered the login url Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Actor to access" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" actor opens the Digital loan URL" width="1366"/>
+                <img src="92d7cbf745a154c1458930e017269caed317a92a4d5ce5ccd62a3abd818bc74e.png" title=" Actor to access (completed)" width="1366"/>
+                <img src="92d7cbf745a154c1458930e017269caed317a92a4d5ce5ccd62a3abd818bc74e.png" title=" Then onboarding question" width="1366"/>
+                <img src="92d7cbf745a154c1458930e017269caed317a92a4d5ce5ccd62a3abd818bc74e.png" title=" Then onboarding question (completed)" width="1366"/>
+                <img src="92d7cbf745a154c1458930e017269caed317a92a4d5ce5ccd62a3abd818bc74e.png" title=" Actor onboarding" width="1366"/>
+                <img src="92d7cbf745a154c1458930e017269caed317a92a4d5ce5ccd62a3abd818bc74e.png" title=" actor clicks on Button verifique aqui" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" actor clicks on Button verifique aqui" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" actor clicks on Button verifique aqui (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Actor onboarding (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Given given i entered the login url Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" When I fill in the login fields C&eacute;dula de extranjer&iacute;a, 1039458363, contr, Iniciar sesi&oacute;n" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Then login question" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Then login question (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Actor login" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" actor enters 'C&eacute;dula de extranjer&iacute;a' into Select ID Type" width="1366"/>
+                <img src="87b9ceeec2b5c77fa1e796586608c3c402fa373da789f29279681431caf24e42.png" title=" actor enters 'C&eacute;dula de extranjer&iacute;a' into Select ID Type (completed)" width="1366"/>
+                <img src="87b9ceeec2b5c77fa1e796586608c3c402fa373da789f29279681431caf24e42.png" title=" actor enters '1039458363' into Enter User" width="1366"/>
+                <img src="fb9497b4554e2f0b42939b5b903ae36add2b83c14df72765d7ad880f666bd704.png" title=" actor enters '1039458363' into Enter User (completed)" width="1366"/>
+                <img src="fb9497b4554e2f0b42939b5b903ae36add2b83c14df72765d7ad880f666bd704.png" title=" actor enters 'contr' into Enter Password" width="1366"/>
+                <img src="16db6f5dec8cf6b68734db896f9c1c6bb615c63f2665d8c3f9ea867b52d2c22d.png" title=" actor enters 'contr' into Enter Password (completed)" width="1366"/>
+                <img src="16db6f5dec8cf6b68734db896f9c1c6bb615c63f2665d8c3f9ea867b52d2c22d.png" title=" actor clicks on Button Continue" width="1366"/>
+                <img src="16db6f5dec8cf6b68734db896f9c1c6bb615c63f2665d8c3f9ea867b52d2c22d.png" title=" actor clicks on Button Continue (completed)" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Example: {textOnboarding=Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n, textLogin=Iniciar sesi&oacute;n, idType=Usuario, idNumber=mauricio1234, Password=contra1, message=M&iacute;nimo 8 caracteres}" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Given given i entered the login url Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" Actor to access" width="1366"/>
+                <img src="0506a3a1dbbee2235fe47286b51a09f8232743f85c8d1caad92c55e9d4d990ac.png" title=" actor opens the Digital loan URL" width="1366"/>
+                <img src="92d7cbf745a154c1458930e017269caed317a92a4d5ce5ccd62a3abd818bc74e.png" title=" Actor to access (completed)" width="1366"/>
+                <img src="92d7cbf745a154c1458930e017269caed317a92a4d5ce5ccd62a3abd818bc74e.png" title=" Then onboarding question" width="1366"/>
+                <img src="92d7cbf745a154c1458930e017269caed317a92a4d5ce5ccd62a3abd818bc74e.png" title=" Then onboarding question (completed)" width="1366"/>
+                <img src="92d7cbf745a154c1458930e017269caed317a92a4d5ce5ccd62a3abd818bc74e.png" title=" Actor onboarding" width="1366"/>
+                <img src="92d7cbf745a154c1458930e017269caed317a92a4d5ce5ccd62a3abd818bc74e.png" title=" actor clicks on Button verifique aqui" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" actor clicks on Button verifique aqui" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" actor clicks on Button verifique aqui (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Actor onboarding (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Given given i entered the login url Tiene un pr&eacute;stamo preaprobado de libre inversi&oacute;n (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" When I fill in the login fields Usuario, mauricio1234, contra1, Iniciar sesi&oacute;n" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Then login question" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Then login question (completed)" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" Actor login" width="1366"/>
+                <img src="be18160c53873d3359789bde34ec8f4cd03bb8b63ad06c5e2907b14019b8c28f.png" title=" actor enters 'Usuario' into Select ID Type" width="1366"/>
+                <img src="dcbdcebab3dd469a798036d753061c1f0f60037527a8b3207e405ab7ea5bedf7.png" title=" actor enters 'Usuario' into Select ID Type (completed)" width="1366"/>
+                <img src="dcbdcebab3dd469a798036d753061c1f0f60037527a8b3207e405ab7ea5bedf7.png" title=" actor enters 'mauricio1234' into Enter User" width="1366"/>
+                <img src="ad3c95b574e2980bdd5e30627f1e5836b4ff48b07c1e4ba3d061e0f77afdf742.png" title=" actor enters 'mauricio1234' into Enter User (completed)" width="1366"/>
+                <img src="ad3c95b574e2980bdd5e30627f1e5836b4ff48b07c1e4ba3d061e0f77afdf742.png" title=" actor enters 'contra1' into Enter Password" width="1366"/>
+                <img src="2308b6446bf868c52fd758b194fc8b4ff65aaabeccfe637849f57f9f05555ffe.png" title=" actor enters 'contra1' into Enter Password (completed)" width="1366"/>
+                <img src="2308b6446bf868c52fd758b194fc8b4ff65aaabeccfe637849f57f9f05555ffe.png" title=" Actor login (completed)" width="1366"/>
+                <img src="2308b6446bf868c52fd758b194fc8b4ff65aaabeccfe637849f57f9f05555ffe.png" title=" When I fill in the login fields Usuario, mauricio1234, contra1, Iniciar sesi&oacute;n (completed)" width="1366"/>
+                <img src="2308b6446bf868c52fd758b194fc8b4ff65aaabeccfe637849f57f9f05555ffe.png" title=" Then the different messages are validated M&iacute;nimo 8 caracteres" width="1366"/>
+                <img src="2308b6446bf868c52fd758b194fc8b4ff65aaabeccfe637849f57f9f05555ffe.png" title=" Then messages question" width="1366"/>
+                <img src="25e515f492ca677f85ea2ed33997618c904f7bba229c2e635c636267739685b5.png" title=" Then messages question (completed): <span class='failing-color'>FAILURE</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.82</span>
+</div>
+</body>
+</html>
