@@ -2,7 +2,7 @@ package com.bcs.certification.digitalloan.tasks;
 
 import com.bcs.certification.digitalloan.UI.digitalLoanURL;
 
-import com.bcs.certification.digitalloan.UI.onboardingUI;
+import com.bcs.certification.digitalloan.UI.landingUI;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
@@ -16,7 +16,7 @@ public class toAccess implements Task {
         actor.attemptsTo(
 
                 Open.browserOn().the(digitalLoanURL.class),
-                WaitUntil.the(onboardingUI.BTN_ONBOARDING, WebElementStateMatchers
+                WaitUntil.the(landingUI.BTN_ONBOARDING, WebElementStateMatchers
                         .isVisible())
                         .forNoMoreThan(20)
                         .seconds()

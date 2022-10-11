@@ -6,7 +6,7 @@ public class loginUI {
 
     public static final Target TEXT_VALIDATE_LOGIN =
             Target.the("confirm that you are on the offer screen")
-                    .locatedBy("//span[@role='paragraph']"
+                    .locatedBy("//H1[@id='title-Login']"
                     );
     public static final Target SELECT_ID_TYPE =
             Target.the("Select ID Type")
@@ -29,7 +29,7 @@ public class loginUI {
 
     public static final Target TEXT_VALIDATE_PASSWORD =
             Target.the("confirm that it asks for the password")
-                    .locatedBy("(//span[@role='paragraph'])[2]"
+                    .locatedBy("(//span[@role='paragraph'])[1]"
                     );
 
     public static final Target INPUT_PASSWORD =
@@ -40,6 +40,11 @@ public class loginUI {
     public static final Target BTN_CONTINUE =
             Target.the("Button Continue")
                     .locatedBy("//BUTTON[@id='btn-login']"
+                    );
+
+    public static final Target BTN_CONTINUE2 =
+            Target.the("Button Continue 2")
+                    .locatedBy("//button[text()='Iniciar']"
                     );
 
     public static final Target BTN_FORGOT_PASSWORD =

@@ -10,7 +10,7 @@ public class offerUI {
                     );
 
     public static final Target AMOUNT_MINOR =
-            Target.the("lower amount\n")
+            Target.the("lower amount")
                     .locatedBy("//BUTTON[@id='mount-minor']"
                     );
 

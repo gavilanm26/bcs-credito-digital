@@ -1,6 +1,5 @@
 package com.bcs.certification.digitalloan.tasks;
 
-import com.bcs.certification.digitalloan.UI.onboardingUI;
 import com.bcs.certification.digitalloan.utils.hasletters.hasLetters;
 import com.bcs.certification.digitalloan.UI.loginUI;
 import net.serenitybdd.screenplay.Actor;
@@ -11,16 +10,36 @@ import net.serenitybdd.screenplay.actions.SendKeys;
 
 public class login implements Task {
 
-    private String idType;
+    protected String password;
+
+    public login(String password){
+        this.password  = password;
+    }
+
+    @Override
+    public <T extends Actor> void performAs(T actor) {
+        actor.attemptsTo(
+                SendKeys.of(password).into(loginUI.INPUT_PASSWORD),
+                Click.on(loginUI.BTN_CONTINUE2)
+        );
+    }
+
+    public static login login(String password) {
+        return Tasks.instrumented(login.class, password);
+    }
+}
+
+  /*  private String idType;
     private String user;
     private String password;
     private String messasge = "Máximo 10 caracteres permitidos";
     private boolean flag = false;
     hasLetters letters = new hasLetters();
 
-    public login(String idType, String user, String password) {
-        this.idType = idType;
-        this.user = user;
+    public login(String idType, String user, String idType1, String user1, String password) {
+        //super(idType, user);
+        this.idType = idType1;
+        this.user = user1;
         this.password = password;
     }
 
@@ -126,4 +145,6 @@ public class login implements Task {
     public static login login(String idType, String user, String password) {
         return Tasks.instrumented(login.class, idType, user, password);
     }
-}
+
+   */
+

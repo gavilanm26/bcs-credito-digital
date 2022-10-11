@@ -26,7 +26,7 @@ Feature: complete process to acquire a digital loan
     Examples:
       | textOnboarding | textLogin | idType |  idNumber | Password | textOffer | textAccount | number | firstName | lastName | relation | percentage | textBeneficiaries | textSummary | textPromissoryNote | otp | textOtp | qualification | textQualify | textCongratulations |
     ##@externaldata@./src/test/resources/datadriven/login/testData.xlsx@happyPathCedula
-|Tiene un crédito preaprobado de libre inversión|Para comenzar ingrese su tipo y número de documento|Cédula de ciudadanía|41728985|ibcs0011|Personalice su oferta|Seleccionar cuenta|1|mauricio|gavilan|Hijo(a)|100|Seguro de vida|Verificación de información|Firma de pagaré|1234|Firma de pagaré|5|¿Cómo califica su experiencia adquiriendo el préstamo?|¡Felicitaciones!|
+|Crédito Digital de Libre Inversión|Para comenzar ingrese su tipo y número de documento|Cédula de ciudadanía|41728985|ibcs0011|Personalice su oferta|Seleccionar cuenta|1|mauricio|gavilan|Hijo(a)|100|Seguro de vida|Verificación de información|Firma de pagaré|1234|Firma de pagaré|5|¿Cómo califica su experiencia adquiriendo el préstamo?|¡Felicitaciones!|
 
 
 

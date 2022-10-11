@@ -11,8 +11,6 @@ import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.GivenWhenThen;
 
 
-import javax.swing.*;
-
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class happyPathCedulaStep {
@@ -27,7 +25,7 @@ public class happyPathCedulaStep {
     @When("^I know the conditions and benefits of the offer and I click on Verifique aqui (.*)$")
     public void iKnowTheConditionsAndBenefitsOfTheOfferAndIClickOnVerifiqueAqui(String validationText) {
         theActorInTheSpotlight().should(
-                GivenWhenThen.seeThat(onboardingQuestion.onboardingQuestion(validationText))
+                GivenWhenThen.seeThat(landingQuestion.landingQuestion(validationText))
         );
         theActorInTheSpotlight().wasAbleTo(
                 onboarding.knowOffer()
@@ -42,7 +40,7 @@ public class happyPathCedulaStep {
         );
             //String Code = JOptionPane.showInputDialog("Ingrese código OTP");
         theActorInTheSpotlight(). wasAbleTo(
-                login.login(idType, idNumber, password)
+                //login.login(idType, idNumber, password)
         );
 
     }

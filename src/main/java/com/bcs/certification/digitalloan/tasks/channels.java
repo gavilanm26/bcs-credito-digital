@@ -9,8 +9,8 @@ import net.serenitybdd.screenplay.actions.SendKeys;
 
 public class channels implements Task {
 
-    private String idType;
-    private String user;
+    protected String idType;
+    protected String user;
 
     public channels(String idType, String user) {
         this.idType = idType;

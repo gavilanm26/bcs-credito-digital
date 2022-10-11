@@ -7,6 +7,17 @@ Feature: login screen validation Bank Caja Social - digital loan
   I want: to be on the login screen
   To: perform all validations
 
+  @SuccessfulLogin
+  Scenario Outline: Successful login
+    Given given i entered the login url <textOnboarding>
+    When  I have selected the type of document and the number <textLogin>, <idType>, <idNumber>
+    And enter the correct password and click the start button <textPassword>, <Password>
+    Then you can see the offer customization screen <textOffer>
+
+    Examples:
+      | textOnboarding | textLogin | idType | idNumber | textPassword | Password | textOffer |
+    ##@externaldata@./src/test/resources/datadriven/login/testData.xlsx@SuccessfulLogin
+|Crédito Digital de Libre Inversión|Bienvenido a|Cédula de ciudadanía|1026265690|Ingrese la contraseña|ibcs0011|Personalice su oferta|
 
   @loginValidationsButton @Regresion
   Scenario Outline: Disabled Button
@@ -17,18 +28,18 @@ Feature: login screen validation Bank Caja Social - digital loan
     Examples:
       | textOnboarding | textLogin | idType | idNumber | Password |
     ##@externaldata@./src/test/resources/datadriven/login/testData.xlsx@loginValidationsButtonDisabled
-|Tiene un préstamo preaprobado de libre inversión|Iniciar sesión|Cédula de ciudadanía|NA|NA|
-|Tiene un préstamo preaprobado de libre inversión|Iniciar sesión|Cédula de extranjería|NA|NA|
-|Tiene un préstamo preaprobado de libre inversión|Iniciar sesión|Usuario|NA|NA|
-|Tiene un préstamo preaprobado de libre inversión|Iniciar sesión|NA|123456789|contra12|
-|Tiene un préstamo preaprobado de libre inversión|Iniciar sesión|Cédula de ciudadanía|NA|contra12|
-|Tiene un préstamo preaprobado de libre inversión|Iniciar sesión|Cédula de ciudadanía|123456789|NA|
-|Tiene un préstamo preaprobado de libre inversión|Iniciar sesión|Cédula de extranjería|NA|contra12|
-|Tiene un préstamo preaprobado de libre inversión|Iniciar sesión|Cédula de extranjería|1039458363|NA|
-|Tiene un préstamo preaprobado de libre inversión|Iniciar sesión|Usuario|NA|contra12|
-|Tiene un préstamo preaprobado de libre inversión|Iniciar sesión|Usuario|mauro123|NA|
-|Tiene un préstamo preaprobado de libre inversión|Iniciar sesión|Cédula de ciudadanía|mauro|contra12|
-|Tiene un préstamo preaprobado de libre inversión|Iniciar sesión|Cédula de extranjería|mauro|contra12|
+|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|NA|NA|
+|Le damos la bienvenida a|Bienvenido a|Cédula de extranjería|NA|NA|
+|Le damos la bienvenida a|Bienvenido a|Usuario|NA|NA|
+|Le damos la bienvenida a|Bienvenido a|NA|123456789|contra12|
+|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|NA|contra12|
+|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|123456789|NA|
+|Le damos la bienvenida a|Bienvenido a|Cédula de extranjería|NA|contra12|
+|Le damos la bienvenida a|Bienvenido a|Cédula de extranjería|1039458363|NA|
+|Le damos la bienvenida a|Bienvenido a|Usuario|NA|contra12|
+|Le damos la bienvenida a|Bienvenido a|Usuario|mauro123|NA|
+|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|mauro|contra12|
+|Le damos la bienvenida a|Bienvenido a|Cédula de extranjería|mauro|contra12|
 
 
 

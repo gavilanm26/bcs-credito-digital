@@ -14,8 +14,8 @@ com/bcs/certification/digitalloan/UI/congratulationsUI.java
  com.bcs.certification.digitalloan.UI.congratulationsUI
 com/bcs/certification/digitalloan/interactions/ResponsiveDesignTesting.java
  com.bcs.certification.digitalloan.interactions.ResponsiveDesignTesting
-com/bcs/certification/digitalloan/questions/onboardingQuestion.java
- com.bcs.certification.digitalloan.questions.onboardingQuestion
+com/bcs/certification/digitalloan/questions/noChannelsQuestion.java
+ com.bcs.certification.digitalloan.questions.noChannelsQuestion
 com/bcs/certification/digitalloan/tasks/otp.java
  com.bcs.certification.digitalloan.tasks.otp
 com/bcs/certification/digitalloan/tasks/summary.java
@@ -26,8 +26,8 @@ com/bcs/certification/digitalloan/UI/offerUI.java
  com.bcs.certification.digitalloan.UI.offerUI
 com/bcs/certification/digitalloan/questions/accountQuestion.java
  com.bcs.certification.digitalloan.questions.accountQuestion
-com/bcs/certification/digitalloan/tasks/toAccess.java
- com.bcs.certification.digitalloan.tasks.toAccess
+com/bcs/certification/digitalloan/UI/landingUI.java
+ com.bcs.certification.digitalloan.UI.landingUI
 com/bcs/certification/digitalloan/UI/promissoryNoteUI.java
  com.bcs.certification.digitalloan.UI.promissoryNoteUI
 com/bcs/certification/digitalloan/utils/hasletters/hasLetters.java
@@ -62,10 +62,12 @@ com/bcs/certification/digitalloan/UI/lifeInsuranceUI.java
  com.bcs.certification.digitalloan.UI.lifeInsuranceUI
 com/bcs/certification/digitalloan/questions/otpQuestion.java
  com.bcs.certification.digitalloan.questions.otpQuestion
-com/bcs/certification/digitalloan/UI/onboardingUI.java
- com.bcs.certification.digitalloan.UI.onboardingUI
-com/bcs/certification/digitalloan/UI/channelsUI.java
- com.bcs.certification.digitalloan.UI.channelsUI
+com/bcs/certification/digitalloan/UI/identityValidationUI.java
+ com.bcs.certification.digitalloan.UI.identityValidationUI
+com/bcs/certification/digitalloan/questions/loginQuestion.java
+ com.bcs.certification.digitalloan.questions.loginQuestion
+com/bcs/certification/digitalloan/tasks/toAccess.java
+ com.bcs.certification.digitalloan.tasks.toAccess
 com/bcs/certification/digitalloan/questions/buttonDisableQuestion.java
  com.bcs.certification.digitalloan.questions.buttonDisableQuestion
 com/bcs/certification/digitalloan/questions/channelsQuestion.java
@@ -78,5 +80,5 @@ com/bcs/certification/digitalloan/tasks/login.java
  com.bcs.certification.digitalloan.tasks.login
 com/bcs/certification/digitalloan/tasks/channels.java
  com.bcs.certification.digitalloan.tasks.channels
-com/bcs/certification/digitalloan/questions/loginQuestion.java
- com.bcs.certification.digitalloan.questions.loginQuestion
+com/bcs/certification/digitalloan/questions/landingQuestion.java
+ com.bcs.certification.digitalloan.questions.landingQuestion
