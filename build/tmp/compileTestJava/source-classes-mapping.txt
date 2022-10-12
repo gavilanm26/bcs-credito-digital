@@ -8,11 +8,15 @@ com/bcs/certification/digitalloan/runners/e2eDigitalChannelsRunner.java
  com.bcs.certification.digitalloan.runners.e2eDigitalChannelsRunner
 com/bcs/certification/digitalloan/runners/happyPathCedulaRunner.java
  com.bcs.certification.digitalloan.runners.happyPathCedulaRunner
-com/bcs/certification/digitalloan/stepdefinitions/happyPathCedulaStep.java
- com.bcs.certification.digitalloan.stepdefinitions.happyPathCedulaStep
-com/bcs/certification/digitalloan/stepdefinitions/landingStep.java
- com.bcs.certification.digitalloan.stepdefinitions.landingStep
 com/bcs/certification/digitalloan/stepdefinitions/e2eDigitalChannelsStep.java
  com.bcs.certification.digitalloan.stepdefinitions.e2eDigitalChannelsStep
+com/bcs/certification/digitalloan/stepdefinitions/landingStep.java
+ com.bcs.certification.digitalloan.stepdefinitions.landingStep
+com/bcs/certification/digitalloan/stepdefinitions/happyPathCedulaStep.java
+ com.bcs.certification.digitalloan.stepdefinitions.happyPathCedulaStep
 com/bcs/certification/digitalloan/stepdefinitions/e2eLoginStep.java
  com.bcs.certification.digitalloan.stepdefinitions.e2eLoginStep
+com/bcs/certification/digitalloan/runners/e2eOfferRunner.java
+ com.bcs.certification.digitalloan.runners.e2eOfferRunner
+com/bcs/certification/digitalloan/stepdefinitions/offerStep.java
+ com.bcs.certification.digitalloan.stepdefinitions.offerStep
