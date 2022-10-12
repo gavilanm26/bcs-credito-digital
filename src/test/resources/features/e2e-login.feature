@@ -7,9 +7,9 @@ Feature: login screen validation Bank Caja Social - digital loan
   I want: to be on the login screen
   To: perform all validations
 
-  @SuccessfulLogin
-  Scenario Outline: Successful login
-    Given given i entered the login url <textOnboarding>
+  @SuccessLogin
+  Scenario Outline: Success login
+    Given I entered the login url <textOnboarding>
     When  I have selected the type of document and the number <textLogin>, <idType>, <idNumber>
     And enter the correct password and click the start button <textPassword>, <Password>
     Then you can see the offer customization screen <textOffer>

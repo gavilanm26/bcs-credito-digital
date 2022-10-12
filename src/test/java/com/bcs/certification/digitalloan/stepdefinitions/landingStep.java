@@ -13,7 +13,7 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class landingStep {
 
-    @Given("^given i entered the onboarding url$")
+    @Given("^I entered the onboarding url$")
     public void givenIEnteredTheOnboardingUrl() {
         theActorInTheSpotlight().wasAbleTo(
                 toAccess.toLoan()

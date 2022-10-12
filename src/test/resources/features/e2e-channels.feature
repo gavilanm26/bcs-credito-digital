@@ -8,7 +8,7 @@ Feature: screen to validate whether or not you have digital channels
   To: know whether or not to perform the identity validation flow
 
   @withChannels1Check
-  Scenario Outline: with digital channels
+  Scenario Outline: with digital channels 1 check
     Given I enter the digital friend credit url. <textOnboarding>
     When I fill in the document type, document number fields and select one verification field. <textLogin>, <idType>, <idNumber>
     Then I can see the field to enter the password. <txtPassword>
@@ -19,7 +19,7 @@ Feature: screen to validate whether or not you have digital channels
 |Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|41728985|Ingrese la contraseña|
 
   @withChannels2Checks
-  Scenario Outline: with digital channels
+  Scenario Outline: with digital channels 2 checks
     Given I enter the digital friend credit url. <textOnboarding>
     When I fill in the document type, document number fields and select two verification field. <textLogin>, <idType>, <idNumber>
     Then I can see the field to enter the password. <txtPassword>

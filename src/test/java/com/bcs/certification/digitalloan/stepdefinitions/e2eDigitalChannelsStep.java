@@ -23,13 +23,14 @@ public class e2eDigitalChannelsStep {
 
     @When("^I fill in the document type, document number fields and select one verification field. (.*), (.*), (.*)$")
     public void iFillInTheDocumentTypeDocumentNumberFieldsAndSelectOneVerificationField(String txtLogin, String Type, String Number) {
+        String check = "one";
         theActorInTheSpotlight().should(
             GivenWhenThen.seeThat(
                 loginQuestion.loginQuestion(txtLogin)
             )
         );
         theActorInTheSpotlight().wasAbleTo(
-            channels.channels(Type, Number)
+            channels.channels(check, Type, Number)
         );
     }
 
@@ -44,25 +45,27 @@ public class e2eDigitalChannelsStep {
 
     @When("^I fill in the document type, document number fields and select two verification field. (.*), (.*), (.*)$")
     public void iFillInTheDocumentTypeDocumentNumberFieldsAndSelectTwoVerificationField(String txtLogin, String Type, String Number) {
+        String check = "two";
         theActorInTheSpotlight().should(
                 GivenWhenThen.seeThat(
                         loginQuestion.loginQuestion(txtLogin)
                 )
         );
         theActorInTheSpotlight().wasAbleTo(
-                channels.channels(Type, Number)
+                channels.channels(check, Type, Number)
         );
     }
 
     @When("^I fill in the fields of document type and document number. (.*), (.*), (.*)$")
     public void IFillInTheFieldsOfDocumentTypeAndDocumentNumber(String txtLogin, String Type, String Number) {
+        String check = "one";
         theActorInTheSpotlight().should(
                 GivenWhenThen.seeThat(
                         loginQuestion.loginQuestion(txtLogin)
                 )
         );
         theActorInTheSpotlight().wasAbleTo(
-                channels.channels(Type, Number)
+                channels.channels(check, Type, Number)
         );
     }
 

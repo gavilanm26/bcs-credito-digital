@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = {"src/test/resources/features/e2e-channels.feature"},
         glue = {"com.bcs.certification.digitalloan.stepdefinitions"},
         monochrome = true, snippets = SnippetType.CAMELCASE,
-        tags = "@noChannels"
+        tags = ""
 )
 public class e2eDigitalChannelsRunner {
 }

@@ -11,8 +11,8 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class e2eLoginStepStep {
 
-    @Given("^given i entered the login url (.*)$")
-    public void givenIEnteredTheLoginUrl(String textLanding) {
+    @Given("^I entered the login url (.*)$")
+    public void IEnteredTheLoginUrl(String textLanding) {
         landingStep landing = new landingStep();
         landing.givenIEnteredTheOnboardingUrl();
         landing.iClickTheFirstButtonIWantMyLoan(textLanding);

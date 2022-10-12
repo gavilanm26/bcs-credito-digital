@@ -8,7 +8,7 @@ Feature: onboarding screen validation Bank Caja Social - digital loan
   To: perform all validations
 
   Background:
-    Given given i entered the onboarding url
+    Given I entered the onboarding url
 
   @landing
   Scenario Outline: Button 1

@@ -11,24 +11,36 @@ public class channels implements Task {
 
     protected String idType;
     protected String user;
+    protected String check;
 
-    public channels(String idType, String user) {
+    public channels(String check, String idType, String user) {
         this.idType = idType;
         this.user = user;
+        this.check = check;
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(
-            SendKeys.of(idType).into(loginUI.SELECT_ID_TYPE),
-            SendKeys.of(user).into(loginUI.INPUT_USER),
-            Click.on(loginUI.CHECK_POLICY_AND_TERMS),
-            Click.on(loginUI.CHECK_COMMERCIAL_TERMS),
-            Click.on(loginUI.BTN_CONTINUE)
-        );
+        if(check.equals("one")){
+            actor.attemptsTo(
+                    SendKeys.of(idType).into(loginUI.SELECT_ID_TYPE),
+                    SendKeys.of(user).into(loginUI.INPUT_USER),
+                    Click.on(loginUI.CHECK_POLICY_AND_TERMS),
+                    Click.on(loginUI.BTN_CONTINUE)
+            );
+        }else{
+            actor.attemptsTo(
+                    SendKeys.of(idType).into(loginUI.SELECT_ID_TYPE),
+                    SendKeys.of(user).into(loginUI.INPUT_USER),
+                    Click.on(loginUI.CHECK_POLICY_AND_TERMS),
+                    Click.on(loginUI.CHECK_COMMERCIAL_TERMS),
+                    Click.on(loginUI.BTN_CONTINUE)
+            );
+        }
+
     }
 
-    public static channels channels(String idType, String user){
-        return Tasks.instrumented(channels.class, idType, user);
+    public static channels channels(String check, String idType, String user){
+        return Tasks.instrumented(channels.class, check, idType, user);
     }
 }
