@@ -3,6 +3,6 @@ Expected: is &lt;true&gt;
      but: was &lt;false&gt;</error><system-err>Expected login question
 Expected: is &lt;true&gt;
      but: was &lt;false&gt;&#13;
-com.bcs.certification.digitalloan.stepdefinitions.e2eLoginStepStep.iFillInTheLoginFields(e2eLoginStepStep.java:24)&#13;
+com.bcs.certification.digitalloan.stepdefinitions.e2eLoginStep.iFillInTheLoginFields(e2eLoginStepStep.java:24)&#13;
 ✽.I fill in the login fields Cédula de ciudadanía, NA, NA, Iniciar Sesión(src/test/resources/features/e2e-login.feature:14)&#13;
 </system-err></testcase></testsuite>

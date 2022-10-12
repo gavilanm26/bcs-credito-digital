@@ -9,15 +9,16 @@ Feature: login screen validation Bank Caja Social - digital loan
 
   @SuccessLogin
   Scenario Outline: Success login
-    Given I entered the login url <textOnboarding>
-    When  I have selected the type of document and the number <textLogin>, <idType>, <idNumber>
-    And enter the correct password and click the start button <textPassword>, <Password>
-    Then you can see the offer customization screen <textOffer>
+    Given I enter the digital friend credit url. <textOnboarding>
+    When  I select the type of document and the number. <textLogin>, <idType>, <idNumber>
+    And I enter the correct password and click the start button. <textPassword>, <Password>
+    Then I can see the offer customization screen. <textOffer>
 
     Examples:
       | textOnboarding | textLogin | idType | idNumber | textPassword | Password | textOffer |
     ##@externaldata@./src/test/resources/datadriven/login/testData.xlsx@SuccessfulLogin
-|Crédito Digital de Libre Inversión|Bienvenido a|Cédula de ciudadanía|1026265690|Ingrese la contraseña|ibcs0011|Personalice su oferta|
+|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|1026265690|Ingrese la contraseña|ibcs0011|Monto|
+|Le damos la bienvenida a|Bienvenido a|Cédula de extranjería|1026264954|Ingrese la contraseña|ibcs0011|Monto|
 
   @loginValidationsButton @Regresion
   Scenario Outline: Disabled Button

@@ -13,11 +13,11 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class e2eDigitalChannelsStep {
 
-    @Given("^I enter the digital friend credit url. (.*)$")
-    public void iEnterTheDigitalFriendCreditUrl(String txtLanding) {
-        landingStep onboardingStep = new landingStep();
-        onboardingStep.givenIEnteredTheOnboardingUrl();
-        onboardingStep.iClickTheFirstButtonIWantMyLoan(txtLanding);
+    @Given("^I entered digital friend credit. (.*)$")
+    public void iEnteredDigitalFriendCredit(String txtLanding) {
+        landingStep landingStep = new landingStep();
+        landingStep.iEnteredTheOnboardingUrl();
+        landingStep.iClickTheFirstButtonIWantMyLoan(txtLanding);
     }
 
 

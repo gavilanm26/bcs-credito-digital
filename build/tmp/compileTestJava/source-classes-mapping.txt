@@ -1,18 +1,18 @@
 com/bcs/certification/digitalloan/runners/e2eLandingRunner.java
  com.bcs.certification.digitalloan.runners.e2eLandingRunner
-com/bcs/certification/digitalloan/stepdefinitions/happyPathCedulaStep.java
- com.bcs.certification.digitalloan.stepdefinitions.happyPathCedulaStep
-com/bcs/certification/digitalloan/runners/e2eDigitalChannelsRunner.java
- com.bcs.certification.digitalloan.runners.e2eDigitalChannelsRunner
 com/bcs/certification/digitalloan/runners/e2eLoginRunner.java
  com.bcs.certification.digitalloan.runners.e2eLoginRunner
-com/bcs/certification/digitalloan/runners/happyPathCedulaRunner.java
- com.bcs.certification.digitalloan.runners.happyPathCedulaRunner
-com/bcs/certification/digitalloan/stepdefinitions/landingStep.java
- com.bcs.certification.digitalloan.stepdefinitions.landingStep
 com/bcs/certification/digitalloan/stepdefinitions/hook/hooks.java
  com.bcs.certification.digitalloan.stepdefinitions.hook.hooks
-com/bcs/certification/digitalloan/stepdefinitions/e2eLoginStepStep.java
- com.bcs.certification.digitalloan.stepdefinitions.e2eLoginStepStep
+com/bcs/certification/digitalloan/runners/e2eDigitalChannelsRunner.java
+ com.bcs.certification.digitalloan.runners.e2eDigitalChannelsRunner
+com/bcs/certification/digitalloan/runners/happyPathCedulaRunner.java
+ com.bcs.certification.digitalloan.runners.happyPathCedulaRunner
+com/bcs/certification/digitalloan/stepdefinitions/happyPathCedulaStep.java
+ com.bcs.certification.digitalloan.stepdefinitions.happyPathCedulaStep
+com/bcs/certification/digitalloan/stepdefinitions/landingStep.java
+ com.bcs.certification.digitalloan.stepdefinitions.landingStep
 com/bcs/certification/digitalloan/stepdefinitions/e2eDigitalChannelsStep.java
  com.bcs.certification.digitalloan.stepdefinitions.e2eDigitalChannelsStep
+com/bcs/certification/digitalloan/stepdefinitions/e2eLoginStep.java
+ com.bcs.certification.digitalloan.stepdefinitions.e2eLoginStep

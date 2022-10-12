@@ -3,6 +3,6 @@ Expected: is &lt;true&gt;
      but: was &lt;false&gt;</failure><system-err>Expected messages question
 Expected: is &lt;true&gt;
      but: was &lt;false&gt;&#13;
-com.bcs.certification.digitalloan.stepdefinitions.e2eLoginStepStep.theDifferentMessagesAreValidated(e2eLoginStepStep.java:43)&#13;
+com.bcs.certification.digitalloan.stepdefinitions.e2eLoginStep.theDifferentMessagesAreValidated(e2eLoginStepStep.java:43)&#13;
 ✽.the different messages are validated Mínimo 8 caracteres(src/test/resources/features/e2e-login.feature:38)&#13;
 </system-err></testcase></testsuite>

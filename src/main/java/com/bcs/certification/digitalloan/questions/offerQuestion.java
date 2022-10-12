@@ -18,7 +18,7 @@ public class offerQuestion implements Question {
     @Override
     public Object answeredBy(Actor actor) {
         WaitUntil.the(offerUI.TEXT_VALIDATE_OFFER, WebElementStateMatchers.isVisible())
-                .forNoMoreThan(15)
+                .forNoMoreThan(2000)
                 .seconds();
 
         if(Text.of(offerUI.TEXT_VALIDATE_OFFER)

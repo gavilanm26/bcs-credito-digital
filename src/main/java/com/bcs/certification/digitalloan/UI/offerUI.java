@@ -6,7 +6,7 @@ public class offerUI {
 
     public static final Target TEXT_VALIDATE_OFFER =
             Target.the("confirm that you are on the offer screen")
-                    .locatedBy("//P[@class='font-light'][text()='Personalice su oferta']"
+                    .locatedBy("//h4[text()='Monto']"
                     );
 
     public static final Target AMOUNT_MINOR =
