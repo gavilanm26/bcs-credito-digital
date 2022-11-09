@@ -47,7 +47,7 @@ public class loginUI {
 
     public static final Target INPUT_PASSWORD =
             Target.the("Enter Password")
-                    .locatedBy("//INPUT[@id='password']"
+                    .locatedBy("//input[@type='password']"
                     );
 
     public static final Target BTN_CONTINUE =
@@ -112,17 +112,17 @@ public class loginUI {
 
     public static final Target INCORRECT_DATA =
             Target.the("Please check and try again")
-                    .locatedBy("//DIV[@class='error-message'][text()='Por favor verifique e intente de nuevo']"
+                    .locatedBy("//div[text()='Por favor verifique e intente de nuevo']"
                     );
 
     public static final Target BTN_INCORRECT_DATA =
-            Target.the("BUTTON TO ACCEPT")
-                    .locatedBy("//BUTTON[@id='btn-modal']"
+            Target.the("Button to accept")
+                    .locatedBy("//button[text()='Aceptar']"
                     );
 
-    public static final Target CLOSE_INCORRECT_DATA =
-            Target.the("close details")
-                    .locatedBy("//button[@class='text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white']"
+    public static final Target USER_BLOCKED =
+            Target.the("User blocked")
+                    .locatedBy("//div[text()='Usuario bloqueado, por favor intente de nuevo en 24 horas']"
                     );
 
 }

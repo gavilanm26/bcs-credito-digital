@@ -64,7 +64,7 @@ public class channels implements Task {
                 }
                 break;
             case "two":
-                switch (user) {
+                switch (idType) {
                     case "Cédula de ciudadanía":
                         actor.attemptsTo(
                                 Click.on(loginUI.CLICK_SELECT),
@@ -102,7 +102,7 @@ public class channels implements Task {
                 }
                 break;
             case "validations":
-                switch (user) {
+                switch (idType) {
                     case "Cédula de ciudadanía":
                         actor.attemptsTo(
                                 Click.on(loginUI.CLICK_SELECT),

@@ -9,22 +9,22 @@ import net.serenitybdd.screenplay.waits.WaitUntil;
 
 public class offerQuestion implements Question {
 
-    private final String validationText;
+    private final String offerText;
 
     public offerQuestion(String validation) {
-        this.validationText = validation;
+        this.offerText = validation;
     }
 
     @Override
     public Object answeredBy(Actor actor) {
         WaitUntil.the(offerUI.TEXT_VALIDATE_OFFER, WebElementStateMatchers.isVisible())
-                .forNoMoreThan(2000)
+                .forNoMoreThan(12000)
                 .seconds();
 
         if(Text.of(offerUI.TEXT_VALIDATE_OFFER)
                 .viewedBy(actor)
                 .asString()
-                .equals(validationText.toString()
+                .equals(offerText.toString()
                 )
         )
             return true;

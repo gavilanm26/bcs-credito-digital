@@ -27,18 +27,18 @@ public class e2eLoginStep {
     }
 
 
-/*    @When("^I select the type of document and the number to validate messages. (.*), (.*), (.*)$")
+    @When("^I select the type of document and the number to validate messages. (.*), (.*), (.*)$")
     public void iSelectTheTypeOfDocumentAndTheNumberToValidateMessages(String textLogin, String type, String number) {
         String check = "validations";
         theActorInTheSpotlight().should(
-                GivenWhenThen.seeThat(
-                        loginQuestion.loginQuestion(textLogin)
-                )
+            GivenWhenThen.seeThat(
+                loginQuestion.loginQuestion(textLogin)
+            )
         );
         theActorInTheSpotlight().wasAbleTo(
-                channels.channels(check, type, number)
+            channels.channels(check, type, number)
         );
-    }*/
+    }
 
     @When("^I enter the correct password and click the start button. (.*), (.*)$")
     public void iEnterTheCorrectPasswordAndClickTheStartButton(
@@ -46,9 +46,9 @@ public class e2eLoginStep {
             String password) {
 //String name = JOptionPane.showInputDialog("Type your name please");
         theActorInTheSpotlight().should(
-                GivenWhenThen.seeThat(
-                        channelsQuestion.channelsQuestion(txtPassword)
-                )
+            GivenWhenThen.seeThat(
+                channelsQuestion.channelsQuestion(txtPassword)
+            )
         );
 
         theActorInTheSpotlight().wasAbleTo(
@@ -56,53 +56,31 @@ public class e2eLoginStep {
         );
     }
 
+    @When("^I wait for the page to load. (.*)$")
+    public void iWaitForThePageToLoadValidando(String loader) {
+        theActorInTheSpotlight().should(
+            GivenWhenThen.seeThat(loaderQuestion.loader(loader))
+        );
+    }
+
     @Then("^I can see the offer customization screen. (.*)$")
     public void iCanSeeTheOfferCustomizationScreen(String textOffer) {
         theActorInTheSpotlight().should(
-                GivenWhenThen.seeThat(offerQuestion.offerQuestion(textOffer))
+            GivenWhenThen.seeThat(offerQuestion.offerQuestion(textOffer))
         );
     }
 
-/*    @Then("^the different messages are validated (.*) (.*)$")
+    @Then("^the different messages are validated (.*), (.*)$")
     public void theDifferentMessagesAreValidated(String type, String message) {
         theActorInTheSpotlight().should(
-                GivenWhenThen.seeThat(messagesQuestion.messages(type, message))
+            GivenWhenThen.seeThat(messagesQuestion.messages(type, message))
         );
-    }*/
+    }
+
+    @Then("^I check if I have entered an incorrect data or I have the user blocked. (.*)$")
+    public void iCheckIfIHaveEnteredAnIncorrectDataOrIHaveTheUserBlocked(String modal) {
+        theActorInTheSpotlight().should(
+            GivenWhenThen.seeThat(loginModalQuestion.modal(modal))
+        );
+    }
 }
-
-  /*  @Given("^given i entered the login url (.*)$")
-    public void givenIEnteredTheLoginUrl(String validationText) {
-        e2eOnboardingStep onboardingStep = new e2eOnboardingStep();
-        onboardingStep.givenIEnteredTheOnboardingUrl();
-        onboardingStep.iClickTheFirstButtonIWantMyLoan(validationText);
-    }
-
-    @When("^I fill in the login fields (.*), (.*), (.*), (.*)$")
-    public void iFillInTheLoginFields(String idType, String idNumber, String password, String textLogin) {
-        theActorInTheSpotlight().should(
-                GivenWhenThen.seeThat(loginQuestion.loginQuestion(textLogin))
-        );
-
-        //e2eDigitalChannelsStep channelsStep = new e2eDigitalChannelsStep();
-        //channelsStep.youFillInTheDocumentTypeAndDocumentNumberFields(textLogin, idType, idNumber);
-
-        theActorInTheSpotlight().wasAbleTo(
-                login.login(password)
-        );
-
-    }
-
-    @Then("^the continue button should not be activated$")
-    public void theContinueButtonShouldNotBeActivated() {
-        theActorInTheSpotlight().should(
-                GivenWhenThen.seeThat(buttonDisableQuestion.buttonDisable())
-        );
-    }
-
-    @Then("^the different messages are validated (.*)$")
-    public void theDifferentMessagesAreValidated(String message) {
-        theActorInTheSpotlight().should(
-                GivenWhenThen.seeThat(messagesQuestion.messages(message))
-        );
-    }*/

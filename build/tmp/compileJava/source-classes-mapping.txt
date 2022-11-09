@@ -20,8 +20,8 @@ com/bcs/certification/digitalloan/questions/landingQuestion.java
  com.bcs.certification.digitalloan.questions.landingQuestion
 com/bcs/certification/digitalloan/questions/noChannelsQuestion.java
  com.bcs.certification.digitalloan.questions.noChannelsQuestion
-com/bcs/certification/digitalloan/tasks/offer.java
- com.bcs.certification.digitalloan.tasks.offer
+com/bcs/certification/digitalloan/models/dataList.java
+ com.bcs.certification.digitalloan.models.dataList
 com/bcs/certification/digitalloan/tasks/otp.java
  com.bcs.certification.digitalloan.tasks.otp
 com/bcs/certification/digitalloan/tasks/summary.java
@@ -32,8 +32,8 @@ com/bcs/certification/digitalloan/UI/offerUI.java
  com.bcs.certification.digitalloan.UI.offerUI
 com/bcs/certification/digitalloan/questions/accountQuestion.java
  com.bcs.certification.digitalloan.questions.accountQuestion
-com/bcs/certification/digitalloan/models/dataList.java
- com.bcs.certification.digitalloan.models.dataList
+com/bcs/certification/digitalloan/tasks/offer.java
+ com.bcs.certification.digitalloan.tasks.offer
 com/bcs/certification/digitalloan/UI/identityValidationUI.java
  com.bcs.certification.digitalloan.UI.identityValidationUI
 com/bcs/certification/digitalloan/UI/promissoryNoteUI.java
@@ -60,6 +60,8 @@ com/bcs/certification/digitalloan/tasks/promissoryNote.java
  com.bcs.certification.digitalloan.tasks.promissoryNote
 com/bcs/certification/digitalloan/utils/exceldata/dataToFeature.java
  com.bcs.certification.digitalloan.utils.exceldata.dataToFeature
+com/bcs/certification/digitalloan/questions/loaderQuestion.java
+ com.bcs.certification.digitalloan.questions.loaderQuestion
 com/bcs/certification/digitalloan/tasks/toAccess.java
  com.bcs.certification.digitalloan.tasks.toAccess
 com/bcs/certification/digitalloan/questions/promissoryNoteQuestion.java
@@ -72,13 +74,15 @@ com/bcs/certification/digitalloan/questions/buttonDisableQuestion.java
  com.bcs.certification.digitalloan.questions.buttonDisableQuestion
 com/bcs/certification/digitalloan/questions/channelsQuestion.java
  com.bcs.certification.digitalloan.questions.channelsQuestion
-com/bcs/certification/digitalloan/questions/messagesQuestion.java
- com.bcs.certification.digitalloan.questions.messagesQuestion
+com/bcs/certification/digitalloan/questions/loginQuestion.java
+ com.bcs.certification.digitalloan.questions.loginQuestion
 com/bcs/certification/digitalloan/UI/loginUI.java
  com.bcs.certification.digitalloan.UI.loginUI
 com/bcs/certification/digitalloan/tasks/login.java
  com.bcs.certification.digitalloan.tasks.login
 com/bcs/certification/digitalloan/tasks/channels.java
  com.bcs.certification.digitalloan.tasks.channels
-com/bcs/certification/digitalloan/questions/loginQuestion.java
- com.bcs.certification.digitalloan.questions.loginQuestion
+com/bcs/certification/digitalloan/questions/messagesQuestion.java
+ com.bcs.certification.digitalloan.questions.messagesQuestion
+com/bcs/certification/digitalloan/questions/loginModalQuestion.java
+ com.bcs.certification.digitalloan.questions.loginModalQuestion

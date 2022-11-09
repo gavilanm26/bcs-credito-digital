@@ -12,20 +12,21 @@ Feature: login screen validation Bank Caja Social - digital loan
     Given I enter the digital friend credit url. <textOnboarding>
     When  I select the type of document and the number. <textLogin>, <idType>, <idNumber>
     And I enter the correct password and click the start button. <textPassword>, <Password>
+    And I wait for the page to load. <loader>
     Then I can see the offer customization screen. <textOffer>
 
     Examples:
-      | textOnboarding | textLogin | idType | idNumber | textPassword | Password | textOffer |
+      | textOnboarding | textLogin | idType | idNumber | textPassword | Password | loader | textOffer |
     ##@externaldata@./src/test/resources/datadriven/login/testData.xlsx@SuccessfulLogin
-|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|1026265690|Por su seguridad|ibcs0011|Monto|
-|Le damos la bienvenida a|Bienvenido a|Cédula de extranjería|1026264954|Por su seguridad|ibcs0011|Monto|
+|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|10009287|Por su seguridad|ibcs0011|validando|Personalice su oferta|
+|Le damos la bienvenida a|Bienvenido a|Cédula de extranjería|1026264954|Por su seguridad|ibcs0011|validando|Personalice su oferta|
 
 
-  @ValidationDocumentNumber
+  @validateMessages
   Scenario Outline: Validation messages for the document number
     Given I enter the digital friend credit url. <textOnboarding>
     When  I select the type of document and the number to validate messages. <textLogin>, <idType>, <idNumber>
-    Then the different messages are validated <idType> <message>
+    Then the different messages are validated <idType>, <message>
 
     Examples:
       | textOnboarding | textLogin | idType | idNumber | message |
@@ -41,3 +42,15 @@ Feature: login screen validation Bank Caja Social - digital loan
 |Le damos la bienvenida a|Bienvenido a|Usuario|mauricio23456$|No se permiten: ñ caracteres especiales ni espacios|
 
 
+  @validateModal
+  Scenario Outline: validate messages when they are bad data and blocking
+    Given I enter the digital friend credit url. <textOnboarding>
+    When  I select the type of document and the number. <textLogin>, <idType>, <idNumber>
+    And I enter the correct password and click the start button. <textPassword>, <Password>
+    Then I check if I have entered an incorrect data or I have the user blocked. <modal>
+
+    Examples:
+      | textOnboarding | textLogin | idType | idNumber | textPassword | Password | modal |
+    ##@externaldata@./src/test/resources/datadriven/login/testData.xlsx@validateModal
+|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|14509287|Por su seguridad|ibcs0011|Por favor verifique e intente de nuevo|
+|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|10009287|Por su seguridad|ibcs0011|Usuario bloqueado, por favor intente de nuevo en 24 horas|
