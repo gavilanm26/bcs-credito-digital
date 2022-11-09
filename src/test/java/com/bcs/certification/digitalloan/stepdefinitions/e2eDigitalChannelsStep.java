@@ -2,6 +2,7 @@ package com.bcs.certification.digitalloan.stepdefinitions;
 
 import com.bcs.certification.digitalloan.questions.channelsQuestion;
 import com.bcs.certification.digitalloan.questions.loginQuestion;
+import com.bcs.certification.digitalloan.questions.messagesQuestion;
 import com.bcs.certification.digitalloan.questions.noChannelsQuestion;
 import com.bcs.certification.digitalloan.tasks.channels;
 import cucumber.api.java.en.Given;
@@ -56,19 +57,6 @@ public class e2eDigitalChannelsStep {
         );
     }
 
-    @When("^I fill in the fields of document type and document number. (.*), (.*), (.*)$")
-    public void IFillInTheFieldsOfDocumentTypeAndDocumentNumber(String txtLogin, String Type, String Number) {
-        String check = "one";
-        theActorInTheSpotlight().should(
-                GivenWhenThen.seeThat(
-                        loginQuestion.loginQuestion(txtLogin)
-                )
-        );
-        theActorInTheSpotlight().wasAbleTo(
-                channels.channels(check, Type, Number)
-        );
-    }
-
     @Then("^I can see the identity validation screen. (.*)$")
     public void iCanSeeTheIdentityValidationScreen(String txtIdentityValidation) {
         theActorInTheSpotlight().should(
@@ -77,4 +65,5 @@ public class e2eDigitalChannelsStep {
             )
         );
     }
+
 }

@@ -7,47 +7,94 @@ import net.serenitybdd.screenplay.questions.Text;
 
 public class messagesQuestion implements Question {
     private final String validationText;
+    private final String type;
 
-    public messagesQuestion(String validationText) {
+    public messagesQuestion(String type, String validationText) {
         this.validationText = validationText;
+        this.type = type;
     }
 
     @Override
     public Object answeredBy(Actor actor) {
 
-        if (loginUI.SELECT_ID_TYPE.equals("Usuario")) {
-            if (loginUI.MESSAGE_MIN_CHARACTER_USER_PASSWORD
-                    .resolveFor(actor)
-                    .isVisible() && Text.of(loginUI.MESSAGE_MIN_CHARACTER_USER_PASSWORD)
-                    .viewedBy(actor)
-                    .asString()
-                    .equals(validationText)
-            )
-                return true;
-            else if (loginUI.MESSAGE_MIN_CHARACTER_PASSWORD
-                    .resolveFor(actor)
-                    .isVisible() && Text.of(loginUI.MESSAGE_MIN_CHARACTER_PASSWORD)
-                    .viewedBy(actor)
-                    .asString()
-                    .equals(validationText)
-            )
-                return true;
-        } else if (loginUI.MESSAGE_MIN_CHARACTER_3
-                .resolveFor(actor)
-                .isVisible() && Text.of(loginUI.MESSAGE_MIN_CHARACTER_3)
-                .viewedBy(actor)
-                .asString()
-                .equals(validationText)
-        )
-            return true;
+        if(type.equals("Cédula de ciudadanía") || type.equals("Cédula de extranjería")){
+            switch (validationText){
+                case "Mínimo 3 caracteres":
+                    if (loginUI.MESSAGE_MIN_CHARACTER_3
+                        .resolveFor(actor)
+                        .isVisible() && Text.of(loginUI.MESSAGE_MIN_CHARACTER_3)
+                        .viewedBy(actor)
+                        .asString()
+                        .equals(validationText)
+                    )
+                    break;
+                case "Máximo 10 caracteres permitidos":
+                    if (loginUI.MESSAGE_MAX_CHARACTER
+                        .resolveFor(actor)
+                        .isVisible() && Text.of(loginUI.MESSAGE_MAX_CHARACTER)
+                        .viewedBy(actor)
+                        .asString()
+                        .equals(validationText)
+                    )
+                    break;
+            }
+        }else if(type.equals("Usuario")){
+            switch (validationText){
+                case "Mínimo 8 caracteres":
+                    if (loginUI.MESSAGE_MIN_8_CHARACTER
+                        .resolveFor(actor)
+                        .isVisible() && Text.of(loginUI.MESSAGE_MIN_8_CHARACTER)
+                        .viewedBy(actor)
+                        .asString()
+                        .equals(validationText)
+                    )
+                    break;
+                case "Máximo 18 caracteres permitidos":
+                    if (loginUI.MESSAGE_MAX_CHARACTER_USER
+                        .resolveFor(actor)
+                        .isVisible() && Text.of(loginUI.MESSAGE_MAX_CHARACTER_USER)
+                        .viewedBy(actor)
+                        .asString()
+                        .equals(validationText)
+                    )
+                    break;
+                case "Debe estar formado por mínimo 2 números":
+                    if (loginUI.MINIMUM_2_NUMBER
+                        .resolveFor(actor)
+                        .isVisible() && Text.of(loginUI.MINIMUM_2_NUMBER)
+                        .viewedBy(actor)
+                        .asString()
+                        .equals(validationText)
+                    )
+                    break;
+                case "No se permiten caracteres repetidos":
+                    if (loginUI.REPEATED_CHARACTERS
+                            .resolveFor(actor)
+                            .isVisible() && Text.of(loginUI.REPEATED_CHARACTERS)
+                            .viewedBy(actor)
+                            .asString()
+                            .equals(validationText)
+                    )
+                    break;
+                case "No se permiten: ñ caracteres especiales ni espacios":
+                    if (loginUI.NO_SPECIAL_CHARACTERS_ALLOWED
+                            .resolveFor(actor)
+                            .isVisible() && Text.of(loginUI.NO_SPECIAL_CHARACTERS_ALLOWED)
+                            .viewedBy(actor)
+                            .asString()
+                            .equals(validationText)
+                    )
+                    break;
 
-        else
-            return false;
+                default:
+                    throw new IllegalStateException("Unexpected value: " + validationText);
+            }
+        }
 
         return false;
     }
 
-    public static messagesQuestion messages(String validationText){
-        return new messagesQuestion(validationText);
+    public static messagesQuestion messages(String type, String validationText){
+        return new messagesQuestion(type, validationText);
     }
 }

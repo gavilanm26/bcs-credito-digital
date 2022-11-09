@@ -17,47 +17,27 @@ Feature: login screen validation Bank Caja Social - digital loan
     Examples:
       | textOnboarding | textLogin | idType | idNumber | textPassword | Password | textOffer |
     ##@externaldata@./src/test/resources/datadriven/login/testData.xlsx@SuccessfulLogin
-|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|1026265690|Ingrese la contraseña|ibcs0011|Monto|
-|Le damos la bienvenida a|Bienvenido a|Cédula de extranjería|1026264954|Ingrese la contraseña|ibcs0011|Monto|
-
-  @loginValidationsButton @Regresion
-  Scenario Outline: Disabled Button
-    Given given i entered the login url <textOnboarding>
-    When  I fill in the login fields <idType>, <idNumber>, <Password>, <textLogin>
-    Then the continue button should not be activated
-
-    Examples:
-      | textOnboarding | textLogin | idType | idNumber | Password |
-    ##@externaldata@./src/test/resources/datadriven/login/testData.xlsx@loginValidationsButtonDisabled
-|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|NA|NA|
-|Le damos la bienvenida a|Bienvenido a|Cédula de extranjería|NA|NA|
-|Le damos la bienvenida a|Bienvenido a|Usuario|NA|NA|
-|Le damos la bienvenida a|Bienvenido a|NA|123456789|contra12|
-|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|NA|contra12|
-|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|123456789|NA|
-|Le damos la bienvenida a|Bienvenido a|Cédula de extranjería|NA|contra12|
-|Le damos la bienvenida a|Bienvenido a|Cédula de extranjería|1039458363|NA|
-|Le damos la bienvenida a|Bienvenido a|Usuario|NA|contra12|
-|Le damos la bienvenida a|Bienvenido a|Usuario|mauro123|NA|
-|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|mauro|contra12|
-|Le damos la bienvenida a|Bienvenido a|Cédula de extranjería|mauro|contra12|
+|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|1026265690|Por su seguridad|ibcs0011|Monto|
+|Le damos la bienvenida a|Bienvenido a|Cédula de extranjería|1026264954|Por su seguridad|ibcs0011|Monto|
 
 
-
-  @loginValidationsMessages @Regresion
-  Scenario Outline: Validation Messages
-    Given given i entered the login url <textOnboarding>
-    When  I fill in the login fields <idType>, <idNumber>, <Password>, <textLogin>
-    Then the different messages are validated <message>
+  @ValidationDocumentNumber
+  Scenario Outline: Validation messages for the document number
+    Given I enter the digital friend credit url. <textOnboarding>
+    When  I select the type of document and the number to validate messages. <textLogin>, <idType>, <idNumber>
+    Then the different messages are validated <idType> <message>
 
     Examples:
-      | textOnboarding | textLogin | idType | idNumber | Password | message |
-    ##@externaldata@./src/test/resources/datadriven/login/testData.xlsx@hoja1
-|Tiene un préstamo preaprobado de libre inversión|Iniciar sesión|Cédula de ciudadanía|12|contra12|Mínimo 3 caracteres|
-|Tiene un préstamo preaprobado de libre inversión|Iniciar sesión|Cédula de extranjería|12|contra12|Mínimo 3 caracteres|
-|Tiene un préstamo preaprobado de libre inversión|Iniciar sesión|Usuario|mauro28|contra12|Mínimo 8 caracteres|
-|Tiene un préstamo preaprobado de libre inversión|Iniciar sesión|Cédula de ciudadanía|1039458363|contr|Mínimo 8 caracteres|
-|Tiene un préstamo preaprobado de libre inversión|Iniciar sesión|Cédula de extranjería|1039458363|contr|Mínimo 8 caracteres|
-|Tiene un préstamo preaprobado de libre inversión|Iniciar sesión|Usuario|mauricio1234|contra1|Mínimo 8 caracteres|
+      | textOnboarding | textLogin | idType | idNumber | message |
+    ##@externaldata@./src/test/resources/datadriven/login/testData.xlsx@ValidationDocumentNumber
+|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|41|Mínimo 3 caracteres|
+|Le damos la bienvenida a|Bienvenido a|Cédula de extranjería|41|Mínimo 3 caracteres|
+|Le damos la bienvenida a|Bienvenido a|Usuario|mauro28|Mínimo 8 caracteres|
+|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|12345678901|Máximo 10 caracteres permitidos|
+|Le damos la bienvenida a|Bienvenido a|Cédula de extranjería|12345678901|Máximo 10 caracteres permitidos|
+|Le damos la bienvenida a|Bienvenido a|Usuario|mauricio23456789043|Máximo 18 caracteres permitidos|
+|Le damos la bienvenida a|Bienvenido a|Usuario|mauricio|Debe estar formado por mínimo 2 números|
+|Le damos la bienvenida a|Bienvenido a|Usuario|mauricio22|No se permiten caracteres repetidos|
+|Le damos la bienvenida a|Bienvenido a|Usuario|mauricio23456$|No se permiten: ñ caracteres especiales ni espacios|
 
 

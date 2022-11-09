@@ -18,6 +18,7 @@ public class hooks {
 
     private EnvironmentVariables environmentVariables;
     private static int count = 0;
+    //private WebDriver driver;
 
  /*   @Before
     public void setTheStage() {
@@ -45,6 +46,7 @@ public class hooks {
     @After
     public void tearDown() {
         System.out.println("El escenario número: " + count + " se ha ejecutado");
+        //driver.close();
     }
 
 }

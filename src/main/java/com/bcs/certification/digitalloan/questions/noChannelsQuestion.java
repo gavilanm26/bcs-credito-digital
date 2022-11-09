@@ -25,7 +25,7 @@ public class noChannelsQuestion implements Question {
         if(Text.of(identityValidationUI.TXT_IDENTITY_VALIDATION)
                 .viewedBy(actor)
                 .asString()
-                .equals(txtIdentityValidation.toString()
+                .contains(txtIdentityValidation.toString()
                 )
         )
             return true;

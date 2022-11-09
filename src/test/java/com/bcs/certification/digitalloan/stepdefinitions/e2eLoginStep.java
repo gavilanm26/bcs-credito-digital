@@ -1,6 +1,7 @@
 package com.bcs.certification.digitalloan.stepdefinitions;
 
 import com.bcs.certification.digitalloan.questions.*;
+import com.bcs.certification.digitalloan.tasks.channels;
 import com.bcs.certification.digitalloan.tasks.login;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -25,6 +26,20 @@ public class e2eLoginStep {
         channel.iFillInTheDocumentTypeDocumentNumberFieldsAndSelectOneVerificationField(textLogin, type, number);
     }
 
+
+/*    @When("^I select the type of document and the number to validate messages. (.*), (.*), (.*)$")
+    public void iSelectTheTypeOfDocumentAndTheNumberToValidateMessages(String textLogin, String type, String number) {
+        String check = "validations";
+        theActorInTheSpotlight().should(
+                GivenWhenThen.seeThat(
+                        loginQuestion.loginQuestion(textLogin)
+                )
+        );
+        theActorInTheSpotlight().wasAbleTo(
+                channels.channels(check, type, number)
+        );
+    }*/
+
     @When("^I enter the correct password and click the start button. (.*), (.*)$")
     public void iEnterTheCorrectPasswordAndClickTheStartButton(
             String txtPassword,
@@ -48,6 +63,12 @@ public class e2eLoginStep {
         );
     }
 
+/*    @Then("^the different messages are validated (.*) (.*)$")
+    public void theDifferentMessagesAreValidated(String type, String message) {
+        theActorInTheSpotlight().should(
+                GivenWhenThen.seeThat(messagesQuestion.messages(type, message))
+        );
+    }*/
 }
 
   /*  @Given("^given i entered the login url (.*)$")
