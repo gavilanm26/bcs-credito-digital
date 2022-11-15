@@ -37,7 +37,7 @@ public class hooks {
         OnStage.setTheStage(
                 new OnlineCast()
         );
-        OnStage.theActorCalled("actor");
+        OnStage.theActorCalled("El buen vecino");
 
         System.out.println("Se esta ejecutando el escenario número: " + count);
 
