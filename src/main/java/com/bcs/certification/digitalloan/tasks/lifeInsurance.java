@@ -26,14 +26,14 @@ public class lifeInsurance implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(lifeInsuranceUI.HREF_SEE_DETAILS),
-                Click.on(lifeInsuranceUI.CLOSE_DETAILS),
-                SendKeys.of(beneficiaries).into(lifeInsuranceUI.SELECT_BENEFICIARIES),
-                SendKeys.of(name).into(lifeInsuranceUI.INPUT_FIRSTNAME),
-                SendKeys.of(lastName).into(lifeInsuranceUI.INPUT_LASTNAME),
-                SendKeys.of(relationship).into(lifeInsuranceUI.SELECT_RELATIONSHIP),
-                Click.on(lifeInsuranceUI.SELECT_PERCENTAGE),
-                Click.on(lifeInsuranceUI.BTN_CONTINUE)
+            Click.on(lifeInsuranceUI.HREF_SEE_DETAILS),
+            Click.on(lifeInsuranceUI.CLOSE_DETAILS),
+            SendKeys.of(beneficiaries).into(lifeInsuranceUI.SELECT_BENEFICIARIES),
+            SendKeys.of(name).into(lifeInsuranceUI.INPUT_FIRSTNAME),
+            SendKeys.of(lastName).into(lifeInsuranceUI.INPUT_LASTNAME),
+            SendKeys.of(relationship).into(lifeInsuranceUI.SELECT_RELATIONSHIP),
+            Click.on(lifeInsuranceUI.SELECT_PERCENTAGE),
+            Click.on(lifeInsuranceUI.BTN_CONTINUE)
 
         );
     }

@@ -12,7 +12,7 @@ public class summary implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(summaryUI.BTN_CONTINUE)
+            Click.on(summaryUI.BTN_CONTINUE)
         );
 
     }

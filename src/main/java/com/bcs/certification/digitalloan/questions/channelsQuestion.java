@@ -7,6 +7,7 @@ import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.questions.Text;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
+@SuppressWarnings("MethodNameSameAsClassName")
 public class channelsQuestion implements Question {
 
     private final String txtPassword;
@@ -18,18 +19,12 @@ public class channelsQuestion implements Question {
     @Override
     public Object answeredBy(Actor actor) {
         WaitUntil.the(loginUI.TEXT_VALIDATE_PASSWORD, WebElementStateMatchers.isVisible())
-                .forNoMoreThan(15)
-                .seconds();
+            .forNoMoreThan(15)
+            .seconds();
 
-        if(Text.of(loginUI.TEXT_VALIDATE_PASSWORD)
-                .viewedBy(actor)
-                .asString()
-                .contains(txtPassword.toString()
-                )
-        )
-            return true;
-        else
-            return false;
+        return Text.of(loginUI.TEXT_VALIDATE_PASSWORD)
+            .answeredBy(actor)
+            .contains(txtPassword);
     }
 
     public static channelsQuestion channelsQuestion(String txtPassword){

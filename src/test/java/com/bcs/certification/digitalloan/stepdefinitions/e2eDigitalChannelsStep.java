@@ -2,16 +2,17 @@ package com.bcs.certification.digitalloan.stepdefinitions;
 
 import com.bcs.certification.digitalloan.questions.channelsQuestion;
 import com.bcs.certification.digitalloan.questions.loginQuestion;
-import com.bcs.certification.digitalloan.questions.messagesQuestion;
 import com.bcs.certification.digitalloan.questions.noChannelsQuestion;
 import com.bcs.certification.digitalloan.tasks.channels;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.GivenWhenThen;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
+@SuppressWarnings("unchecked")
 public class e2eDigitalChannelsStep {
 
     @Given("^I entered digital friend credit. (.*)$")
@@ -48,12 +49,12 @@ public class e2eDigitalChannelsStep {
     public void iFillInTheDocumentTypeDocumentNumberFieldsAndSelectTwoVerificationField(String txtLogin, String Type, String Number) {
         String check = "two";
         theActorInTheSpotlight().should(
-                GivenWhenThen.seeThat(
-                        loginQuestion.loginQuestion(txtLogin)
-                )
+            GivenWhenThen.seeThat(
+                loginQuestion.loginQuestion(txtLogin)
+            )
         );
         theActorInTheSpotlight().wasAbleTo(
-                channels.channels(check, Type, Number)
+            channels.channels(check, Type, Number)
         );
     }
 

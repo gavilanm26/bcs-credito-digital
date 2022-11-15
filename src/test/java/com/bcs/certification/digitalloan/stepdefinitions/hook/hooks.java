@@ -1,8 +1,8 @@
 package com.bcs.certification.digitalloan.stepdefinitions.hook;
 
-import com.bcs.certification.digitalloan.tasks.toAccess;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
+
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;

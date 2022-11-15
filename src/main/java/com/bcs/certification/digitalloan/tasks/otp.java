@@ -16,7 +16,7 @@ public class otp implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                SendKeys.of(numberotp).into(otpUI.INPUT_OTP)
+            SendKeys.of(numberotp).into(otpUI.INPUT_OTP)
         );
     }
 

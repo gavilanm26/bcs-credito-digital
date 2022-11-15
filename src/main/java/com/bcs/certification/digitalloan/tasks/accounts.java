@@ -11,9 +11,9 @@ public class accounts implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(accountsUI.SELECT_ACCOUNT),
-                Click.on(accountsUI.CHECK_AUTHORIZATION),
-                Click.on(accountsUI.BTN_CONTINUO_ACCOUNT)
+            Click.on(accountsUI.SELECT_ACCOUNT),
+            Click.on(accountsUI.CHECK_AUTHORIZATION),
+            Click.on(accountsUI.BTN_CONTINUO_ACCOUNT)
         );
     }
 

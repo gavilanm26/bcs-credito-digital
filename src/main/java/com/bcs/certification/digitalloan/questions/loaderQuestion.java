@@ -18,18 +18,12 @@ public class loaderQuestion implements Question {
     @Override
     public Object answeredBy(Actor actor) {
         WaitUntil.the(offerUI.LOADER, WebElementStateMatchers.isVisible())
-                .forNoMoreThan(1000)
-                .seconds();
+            .forNoMoreThan(1000)
+            .seconds();
 
-        if (Text.of(offerUI.TEXT_VALIDATE_OFFER)
-                .viewedBy(actor)
-                .asString()
-                .contains(loader.toString()
-                )
-        )
-            return true;
-        else
-            return false;
+        return Text.of(offerUI.TEXT_VALIDATE_OFFER)
+            .answeredBy(actor)
+            .contains(loader);
     }
     public static loaderQuestion loader(String loader){
         return new loaderQuestion(loader);

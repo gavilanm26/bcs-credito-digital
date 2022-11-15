@@ -8,6 +8,7 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.SendKeys;
 
+@SuppressWarnings("MethodNameSameAsClassName")
 public class login implements Task {
 
     protected String password;
@@ -19,8 +20,8 @@ public class login implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                SendKeys.of(password).into(loginUI.INPUT_PASSWORD),
-                Click.on(loginUI.BTN_CONTINUE2)
+            SendKeys.of(password).into(loginUI.INPUT_PASSWORD),
+            Click.on(loginUI.BTN_CONTINUE2)
         );
     }
 

@@ -17,18 +17,12 @@ public class promissoryNoteQuestion implements Question {
     @Override
     public Object answeredBy(Actor actor) {
         WaitUntil.the(promissoryNoteUI.TEXT_VALIDATE_PROMISSORYNOTE, WebElementStateMatchers.isVisible())
-                .forNoMoreThan(15)
-                .seconds();
+            .forNoMoreThan(15)
+            .seconds();
 
-        if(Text.of(promissoryNoteUI.TEXT_VALIDATE_PROMISSORYNOTE)
-                .viewedBy(actor)
-                .asString()
-                .equals(validationText.toString()
-                )
-        )
-            return true;
-        else
-            return false;
+        return Text.of(promissoryNoteUI.TEXT_VALIDATE_PROMISSORYNOTE)
+            .answeredBy(actor)
+            .equals(validationText);
     }
 
 public static promissoryNoteQuestion promissoryNote(String validationText){

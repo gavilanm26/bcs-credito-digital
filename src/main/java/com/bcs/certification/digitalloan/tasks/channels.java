@@ -9,6 +9,7 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.SendKeys;
 
 
+@SuppressWarnings("MethodNameSameAsClassName")
 public class channels implements Task {
 
     protected String idType;
@@ -31,32 +32,32 @@ public class channels implements Task {
                 switch (idType) {
                     case "Cédula de ciudadanía":
                         actor.attemptsTo(
-                                Click.on(loginUI.CLICK_SELECT),
-                                Click.on(loginUI.SELECT_ID_CC),
-                                SendKeys.of(user).into(loginUI.INPUT_USER),
-                                Click.on(loginUI.CHECK_POLICY_AND_TERMS),
-                                Click.on(loginUI.BTN_CONTINUE)
+                            Click.on(loginUI.CLICK_SELECT),
+                            Click.on(loginUI.SELECT_ID_CC),
+                            SendKeys.of(user).into(loginUI.INPUT_USER),
+                            Click.on(loginUI.CHECK_POLICY_AND_TERMS),
+                            Click.on(loginUI.BTN_CONTINUE)
                         );
                         break;
 
                     case "Cédula de extranjería":
                         actor.attemptsTo(
-                                Click.on(loginUI.CLICK_SELECT),
-                                Click.on(loginUI.SELECT_ID_CE),
-                                SendKeys.of(user).into(loginUI.INPUT_USER),
-                                Click.on(loginUI.CHECK_POLICY_AND_TERMS),
-                                Click.on(loginUI.BTN_CONTINUE)
+                            Click.on(loginUI.CLICK_SELECT),
+                            Click.on(loginUI.SELECT_ID_CE),
+                            SendKeys.of(user).into(loginUI.INPUT_USER),
+                            Click.on(loginUI.CHECK_POLICY_AND_TERMS),
+                            Click.on(loginUI.BTN_CONTINUE)
                         );
                         break;
 
                     case "Usuario":
                       //  if (letters.containsLetters(user)) {
                             actor.attemptsTo(
-                                    Click.on(loginUI.CLICK_SELECT),
-                                    Click.on(loginUI.SELECT_ID_US),
-                                    SendKeys.of(user).into(loginUI.INPUT_USER),
-                                    Click.on(loginUI.CHECK_POLICY_AND_TERMS),
-                                    Click.on(loginUI.BTN_CONTINUE)
+                                Click.on(loginUI.CLICK_SELECT),
+                                Click.on(loginUI.SELECT_ID_US),
+                                SendKeys.of(user).into(loginUI.INPUT_USER),
+                                Click.on(loginUI.CHECK_POLICY_AND_TERMS),
+                                Click.on(loginUI.BTN_CONTINUE)
                             );
                      //   }
                         break;
@@ -67,35 +68,35 @@ public class channels implements Task {
                 switch (idType) {
                     case "Cédula de ciudadanía":
                         actor.attemptsTo(
-                                Click.on(loginUI.CLICK_SELECT),
-                                Click.on(loginUI.SELECT_ID_CC),
-                                SendKeys.of(user).into(loginUI.INPUT_USER),
-                                Click.on(loginUI.CHECK_POLICY_AND_TERMS),
-                                Click.on(loginUI.CHECK_COMMERCIAL_TERMS),
-                                Click.on(loginUI.BTN_CONTINUE)
+                            Click.on(loginUI.CLICK_SELECT),
+                            Click.on(loginUI.SELECT_ID_CC),
+                            SendKeys.of(user).into(loginUI.INPUT_USER),
+                            Click.on(loginUI.CHECK_POLICY_AND_TERMS),
+                            Click.on(loginUI.CHECK_COMMERCIAL_TERMS),
+                            Click.on(loginUI.BTN_CONTINUE)
                         );
                         break;
 
                     case "Cédula de extranjería":
                         actor.attemptsTo(
-                                Click.on(loginUI.CLICK_SELECT),
-                                Click.on(loginUI.SELECT_ID_CE),
-                                SendKeys.of(user).into(loginUI.INPUT_USER),
-                                Click.on(loginUI.CHECK_POLICY_AND_TERMS),
-                                Click.on(loginUI.CHECK_COMMERCIAL_TERMS),
-                                Click.on(loginUI.BTN_CONTINUE)
+                            Click.on(loginUI.CLICK_SELECT),
+                            Click.on(loginUI.SELECT_ID_CE),
+                            SendKeys.of(user).into(loginUI.INPUT_USER),
+                            Click.on(loginUI.CHECK_POLICY_AND_TERMS),
+                            Click.on(loginUI.CHECK_COMMERCIAL_TERMS),
+                            Click.on(loginUI.BTN_CONTINUE)
                         );
                         break;
 
                     case "Usuario":
                        // if (letters.containsLetters(user)) {
                             actor.attemptsTo(
-                                    Click.on(loginUI.CLICK_SELECT),
-                                    Click.on(loginUI.SELECT_ID_US),
-                                    SendKeys.of(user).into(loginUI.INPUT_USER),
-                                    Click.on(loginUI.CHECK_POLICY_AND_TERMS),
-                                    Click.on(loginUI.CHECK_COMMERCIAL_TERMS),
-                                    Click.on(loginUI.BTN_CONTINUE)
+                                Click.on(loginUI.CLICK_SELECT),
+                                Click.on(loginUI.SELECT_ID_US),
+                                SendKeys.of(user).into(loginUI.INPUT_USER),
+                                Click.on(loginUI.CHECK_POLICY_AND_TERMS),
+                                Click.on(loginUI.CHECK_COMMERCIAL_TERMS),
+                                Click.on(loginUI.BTN_CONTINUE)
                             );
                        // }
                         break;
@@ -105,26 +106,26 @@ public class channels implements Task {
                 switch (idType) {
                     case "Cédula de ciudadanía":
                         actor.attemptsTo(
-                                Click.on(loginUI.CLICK_SELECT),
-                                Click.on(loginUI.SELECT_ID_CC),
-                                SendKeys.of(user).into(loginUI.INPUT_USER)
+                            Click.on(loginUI.CLICK_SELECT),
+                            Click.on(loginUI.SELECT_ID_CC),
+                            SendKeys.of(user).into(loginUI.INPUT_USER)
                         );
                         break;
 
                     case "Cédula de extranjería":
                         actor.attemptsTo(
-                                Click.on(loginUI.CLICK_SELECT),
-                                Click.on(loginUI.SELECT_ID_CE),
-                                SendKeys.of(user).into(loginUI.INPUT_USER)
+                            Click.on(loginUI.CLICK_SELECT),
+                            Click.on(loginUI.SELECT_ID_CE),
+                            SendKeys.of(user).into(loginUI.INPUT_USER)
                         );
                         break;
 
                     case "Usuario":
                       //  if (letters.containsLetters(user)) {
                             actor.attemptsTo(
-                                    Click.on(loginUI.CLICK_SELECT),
-                                    Click.on(loginUI.SELECT_ID_US),
-                                    SendKeys.of(user).into(loginUI.INPUT_USER)
+                                Click.on(loginUI.CLICK_SELECT),
+                                Click.on(loginUI.SELECT_ID_US),
+                                SendKeys.of(user).into(loginUI.INPUT_USER)
                             );
                      //   }
                         break;

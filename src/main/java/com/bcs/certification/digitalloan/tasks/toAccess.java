@@ -14,12 +14,11 @@ public class toAccess implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-
-                Open.browserOn().the(digitalLoanURL.class),
-                WaitUntil.the(landingUI.BTN_ONBOARDING, WebElementStateMatchers
-                        .isVisible())
-                        .forNoMoreThan(20)
-                        .seconds()
+            Open.browserOn().the(digitalLoanURL.class),
+            WaitUntil.the(landingUI.BTN_ONBOARDING, WebElementStateMatchers
+                .isVisible())
+                .forNoMoreThan(20)
+                .seconds()
         );
     }
 

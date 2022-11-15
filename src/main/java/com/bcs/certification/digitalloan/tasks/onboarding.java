@@ -11,7 +11,7 @@ public class onboarding implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(landingUI.BTN_ONBOARDING)
+            Click.on(landingUI.BTN_ONBOARDING)
         );
     }
 

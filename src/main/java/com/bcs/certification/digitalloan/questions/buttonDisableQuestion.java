@@ -7,10 +7,7 @@ import net.serenitybdd.screenplay.Question;
 public class buttonDisableQuestion implements Question {
     @Override
     public Object answeredBy(Actor actor) {
-        if(loginUI.BTN_CONTINUE.resolveFor(actor).isDisabled())
-            return true;
-        else
-            return false;
+        return loginUI.BTN_CONTINUE.resolveFor(actor).isDisabled();
     }
     public static buttonDisableQuestion buttonDisable(){
         return new buttonDisableQuestion();

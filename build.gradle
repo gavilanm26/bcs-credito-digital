@@ -33,7 +33,7 @@ tasks.withType(JavaCompile){
 ext {
     allureVersion = '2.20.1'
     junitVersion = '5.9.1'
-    serenityVer1sion = '2.1.10'
+    serenityVer1sion = '3.4.2'
     poiVesrion = '5.2.3'
 }
 
@@ -49,7 +49,7 @@ dependencies {
     implementation("net.serenity-bdd:serenity-junit:${serenityVer1sion}")
     implementation("net.serenity-bdd:serenity-screenplay:${serenityVer1sion}")
     implementation("net.serenity-bdd:serenity-screenplay-webdriver:${serenityVer1sion}")
-    implementation("net.serenity-bdd:serenity-cucumber:1.9.45")
+    implementation("net.serenity-bdd:serenity-cucumber:${serenityVer1sion}")
     //implementation'org.seleniumhq.selenium:selenium-server:3.141.59'
 
     implementation("org.apache.poi:poi:${poiVesrion}")

@@ -7,6 +7,7 @@ import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.questions.Text;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
+@SuppressWarnings("MethodNameSameAsClassName")
 public class landingQuestion implements Question {
     private final String validationText;
 
@@ -17,18 +18,12 @@ public class landingQuestion implements Question {
     @Override
     public Object answeredBy(Actor actor) {
         WaitUntil.the(landingUI.VALIDATE_TEXT_ONBOARDING, WebElementStateMatchers.isVisible())
-                .forNoMoreThan(15)
-                .seconds();
+            .forNoMoreThan(15)
+            .seconds();
 
-        if(Text.of(landingUI.VALIDATE_TEXT_ONBOARDING)
-                .viewedBy(actor)
-                .asString()
-                .equals(validationText.toString()
-                )
-        )
-            return true;
-        else
-            return false;
+        return Text.of(landingUI.VALIDATE_TEXT_ONBOARDING)
+            .answeredBy(actor)
+            .equals(validationText);
     }
     public static landingQuestion landingQuestion(String validationText){
         return new landingQuestion(validationText);

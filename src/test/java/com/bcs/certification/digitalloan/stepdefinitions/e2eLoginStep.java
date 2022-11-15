@@ -3,13 +3,15 @@ package com.bcs.certification.digitalloan.stepdefinitions;
 import com.bcs.certification.digitalloan.questions.*;
 import com.bcs.certification.digitalloan.tasks.channels;
 import com.bcs.certification.digitalloan.tasks.login;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.GivenWhenThen;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
+@SuppressWarnings("unchecked")
 public class e2eLoginStep {
 
     @Given("^I enter the digital friend credit url. (.*)$")

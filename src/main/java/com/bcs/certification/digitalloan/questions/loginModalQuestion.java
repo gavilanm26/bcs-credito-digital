@@ -27,12 +27,11 @@ public class loginModalQuestion implements Question {
                 if (loginUI.INCORRECT_DATA
                     .resolveFor(actor)
                     .isVisible() && Text.of(loginUI.INCORRECT_DATA)
-                    .viewedBy(actor)
-                    .asString()
+                    .answeredBy(actor)
                     .equals(modal)
                 )
-                return true;
-                break;
+            return true;
+                    break;
             case "Usuario bloqueado, por favor intente de nuevo en 24 horas":
 
                 WaitUntil.the(loginUI.USER_BLOCKED, WebElementStateMatchers.isVisible())
@@ -42,12 +41,14 @@ public class loginModalQuestion implements Question {
                 if (loginUI.USER_BLOCKED
                     .resolveFor(actor)
                     .isVisible() && Text.of(loginUI.USER_BLOCKED)
-                    .viewedBy(actor)
-                    .asString()
+                    .answeredBy(actor)
                     .equals(modal)
-                )
-                return true;
+                ) {
+            return true;
+                }
             break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + modal);
         }
         return false;
     }

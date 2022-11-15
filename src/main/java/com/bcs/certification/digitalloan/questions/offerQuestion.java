@@ -7,6 +7,7 @@ import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.questions.Text;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
+@SuppressWarnings("MethodNameSameAsClassName")
 public class offerQuestion implements Question {
 
     private final String offerText;
@@ -18,19 +19,13 @@ public class offerQuestion implements Question {
     @Override
     public Object answeredBy(Actor actor) {
         WaitUntil.the(offerUI.TEXT_VALIDATE_OFFER, WebElementStateMatchers.isVisible())
-                .forNoMoreThan(12000)
-                .seconds();
+            .forNoMoreThan(12000)
+            .seconds();
 
-        if(Text.of(offerUI.TEXT_VALIDATE_OFFER)
-                .viewedBy(actor)
-                .asString()
-                .equals(offerText.toString()
-                )
-        )
-            return true;
-        else
-            return false;
-    }
+        return Text.of(offerUI.TEXT_VALIDATE_OFFER)
+            .answeredBy(actor)
+            .equals(offerText);
+}
     public static offerQuestion offerQuestion(String validationText){
         return new offerQuestion(validationText);
     }

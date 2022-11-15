@@ -18,19 +18,13 @@ public class modalQualifyQuestion implements Question {
     public Object answeredBy(Actor actor) {
 
         actor.attemptsTo(
-                WaitUntil.the(congratulationsUI.TEXT_VALIDATE_QUALIFY, WebElementStateMatchers.isVisible())
-                        .forNoMoreThan(15)
-                        .seconds()
+            WaitUntil.the(congratulationsUI.TEXT_VALIDATE_QUALIFY, WebElementStateMatchers.isVisible())
+                .forNoMoreThan(15)
+                .seconds()
         );
-        if(Text.of(congratulationsUI.TEXT_VALIDATE_QUALIFY)
-                .viewedBy(actor)
-                .asString()
-                .equals(validationText.toString()
-                )
-        )
-            return true;
-        else
-            return false;
+        return Text.of(congratulationsUI.TEXT_VALIDATE_QUALIFY)
+            .answeredBy(actor)
+            .equals(validationText);
     }
 
     public static modalQualifyQuestion modalQualify(String validationText){

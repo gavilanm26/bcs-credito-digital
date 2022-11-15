@@ -29,8 +29,7 @@ public class messagesQuestion implements Question {
                         if (loginUI.MESSAGE_MIN_CHARACTER_3
                             .resolveFor(actor)
                             .isVisible() && Text.of(loginUI.MESSAGE_MIN_CHARACTER_3)
-                            .viewedBy(actor)
-                            .asString()
+                            .answeredBy(actor)
                             .equals(validationText)
                         )
                             return true;
@@ -40,8 +39,7 @@ public class messagesQuestion implements Question {
                         if (loginUI.MESSAGE_MAX_CHARACTER
                             .resolveFor(actor)
                             .isVisible() && Text.of(loginUI.MESSAGE_MAX_CHARACTER)
-                            .viewedBy(actor)
-                            .asString()
+                            .answeredBy(actor)
                             .equals(validationText)
                         )
                             return true;
@@ -55,8 +53,7 @@ public class messagesQuestion implements Question {
                         if (loginUI.MESSAGE_MIN_8_CHARACTER
                             .resolveFor(actor)
                             .isVisible() && Text.of(loginUI.MESSAGE_MIN_8_CHARACTER)
-                            .viewedBy(actor)
-                            .asString()
+                            .answeredBy(actor)
                             .equals(validationText)
                         )
                             return true;
@@ -66,8 +63,7 @@ public class messagesQuestion implements Question {
                         if (loginUI.MESSAGE_MAX_CHARACTER_USER
                             .resolveFor(actor)
                             .isVisible() && Text.of(loginUI.MESSAGE_MAX_CHARACTER_USER)
-                            .viewedBy(actor)
-                            .asString()
+                            .answeredBy(actor)
                             .equals(validationText)
                         )
                             return true;
@@ -77,8 +73,7 @@ public class messagesQuestion implements Question {
                         if (loginUI.MINIMUM_2_NUMBER
                             .resolveFor(actor)
                             .isVisible() && Text.of(loginUI.MINIMUM_2_NUMBER)
-                            .viewedBy(actor)
-                            .asString()
+                            .answeredBy(actor)
                             .equals(validationText)
                         )
                             return true;
@@ -88,8 +83,7 @@ public class messagesQuestion implements Question {
                         if (loginUI.REPEATED_CHARACTERS
                             .resolveFor(actor)
                             .isVisible() && Text.of(loginUI.REPEATED_CHARACTERS)
-                            .viewedBy(actor)
-                            .asString()
+                            .answeredBy(actor)
                             .equals(validationText)
                         )
                             return true;
@@ -99,8 +93,7 @@ public class messagesQuestion implements Question {
                         if (loginUI.NO_SPECIAL_CHARACTERS_ALLOWED
                             .resolveFor(actor)
                             .isVisible() && Text.of(loginUI.NO_SPECIAL_CHARACTERS_ALLOWED)
-                            .viewedBy(actor)
-                            .asString()
+                            .answeredBy(actor)
                             .equals(validationText)
                         )
                             return true;

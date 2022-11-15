@@ -10,9 +10,9 @@ public class promissoryNote implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(promissoryNoteUI.READ_DOCUMENT),
-                Click.on(promissoryNoteUI.CLOSE_DOCUMENT),
-                Click.on(promissoryNoteUI.BTN_ACCEPT_DOCUMENT)
+            Click.on(promissoryNoteUI.READ_DOCUMENT),
+            Click.on(promissoryNoteUI.CLOSE_DOCUMENT),
+            Click.on(promissoryNoteUI.BTN_ACCEPT_DOCUMENT)
         );
     }
 

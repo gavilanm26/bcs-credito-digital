@@ -11,7 +11,7 @@ public class congratulations implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(congratulationsUI.RATE_STARS)
+            Click.on(congratulationsUI.RATE_STARS)
         );
     }
 
