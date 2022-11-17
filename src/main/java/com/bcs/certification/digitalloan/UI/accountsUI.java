@@ -21,4 +21,14 @@ public class accountsUI {
         Target.the("Continuo after select account")
             .locatedBy("//BUTTON[@id='btn-accounts']"
             );
+
+    public static final Target TXT_NO_ACCOUNTS =
+            Target.the("No accounts")
+                    .locatedBy("//p[contains(@class, 'pb-[70px]')]"
+                    );
+
+    public static final Target BTN_NO_ACCOUNTS =
+            Target.the("Button no accounts")
+                    .locatedBy("//*[@id='btn-too-many-tries']"
+                    );
 }

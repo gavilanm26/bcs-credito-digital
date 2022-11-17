@@ -6,6 +6,9 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.questions.Text;
 import net.serenitybdd.screenplay.waits.WaitUntil;
+import net.serenitybdd.screenplay.waits.WaitWithTimeout;
+
+import java.time.Duration;
 
 @SuppressWarnings("MethodNameSameAsClassName")
 public class offerQuestion implements Question {
@@ -18,8 +21,9 @@ public class offerQuestion implements Question {
 
     @Override
     public Object answeredBy(Actor actor) {
+
         WaitUntil.the(offerUI.TEXT_VALIDATE_OFFER, WebElementStateMatchers.isVisible())
-            .forNoMoreThan(12000)
+            .forNoMoreThan(107000)
             .seconds();
 
         return Text.of(offerUI.TEXT_VALIDATE_OFFER)

@@ -21,7 +21,7 @@ public class loaderQuestion implements Question {
             .forNoMoreThan(1000)
             .seconds();
 
-        return Text.of(offerUI.TEXT_VALIDATE_OFFER)
+        return Text.of(offerUI.LOADER)
             .answeredBy(actor)
             .contains(loader);
     }

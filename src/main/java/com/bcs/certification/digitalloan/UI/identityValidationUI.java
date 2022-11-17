@@ -13,4 +13,10 @@ public class identityValidationUI {
         Target.the("Button continue")
             .locatedBy("//button[text()='Continuar']"
             );
+
+    public static final Target TEXT_QUESTION =
+            Target.the("identity validation questions\n")
+                    .locatedBy("//button[text()='Continuar']"
+                    );
+
 }

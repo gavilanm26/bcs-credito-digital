@@ -17,11 +17,11 @@ public class accountQuestion implements Question {
 
     @Override
     public Object answeredBy(Actor actor) {
-        WaitUntil.the(accountsUI.TEXT_VALIDATE_ACCOUNT, WebElementStateMatchers.isVisible())
-            .forNoMoreThan(15)
+        WaitUntil.the(accountsUI.TXT_NO_ACCOUNTS, WebElementStateMatchers.isVisible())
+            .forNoMoreThan(9000)
             .seconds();
 
-        return Text.of(accountsUI.TEXT_VALIDATE_ACCOUNT)
+        return Text.of(accountsUI.TXT_NO_ACCOUNTS)
             .answeredBy(actor)
             .equals(validationText);
     }
