@@ -13,7 +13,7 @@ Feature: account validation flow
     Given I enter the digital friend credit url. <textOnboarding>
     When  I select the type of document and the number. <textLogin>, <idType>, <idNumber>
     And I enter the correct password and click the start button. <textPassword>, <Password>
-    #And I wait for the page to load. <loader>
+    #qAAnd I wait for the page to load. <loader>
     Then I can see the screen that I have no active accounts. <txtAccounts>
 
 

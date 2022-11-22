@@ -52,4 +52,4 @@ Feature: login screen validation Bank Caja Social - digital loan
       | textOnboarding | textLogin | idType | idNumber | textPassword | Password | modal |
     ##@externaldata@./src/test/resources/dataDriven/preApproved.xlsx@validateModal
 |Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|14509287|Por su seguridad|ibcs0011|Por favor verifique e intente de nuevo|
-|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|10009287|Por su seguridad|ibcs0011|Usuario bloqueado, por favor intente de nuevo en 24 horas|
+|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|33152814|Por su seguridad|ibcs0011|Usuario bloqueado, por favor intente de nuevo en 24 horas|

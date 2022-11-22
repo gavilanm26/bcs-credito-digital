@@ -23,7 +23,7 @@ public class offerQuestion implements Question {
     public Object answeredBy(Actor actor) {
 
         WaitUntil.the(offerUI.TEXT_VALIDATE_OFFER, WebElementStateMatchers.isVisible())
-            .forNoMoreThan(107000)
+            .forNoMoreThan(9000)
             .seconds();
 
         return Text.of(offerUI.TEXT_VALIDATE_OFFER)

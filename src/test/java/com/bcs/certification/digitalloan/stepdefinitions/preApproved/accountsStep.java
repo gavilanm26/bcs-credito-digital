@@ -1,7 +1,6 @@
 package com.bcs.certification.digitalloan.stepdefinitions.preApproved;
 
 import com.bcs.certification.digitalloan.questions.accountQuestion;
-import com.bcs.certification.digitalloan.questions.loaderQuestion;
 import io.cucumber.java.en.Then;
 import net.serenitybdd.screenplay.GivenWhenThen;
 

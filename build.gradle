@@ -20,6 +20,7 @@ plugins {
 //apply plugin: 'net.serenity-bdd.aggregator'
 apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
 
+
 group 'com.bcs.certification.digitalloan'
 version '1.0-SNAPSHOT'
 
@@ -38,6 +39,14 @@ ext {
     poiVesrion = '5.2.3'
     aspectjweaver = '1.9.9.1'
 }
+
+/*allure{
+    adapter.autoconfigure = true
+    version '2.20.1'
+    useJUnit5{
+        version = '2.20.1'
+    }
+}*/
 
 dependencies {
 
@@ -65,3 +74,4 @@ dependencies {
     //testImplementation("io.qameta.allure:allure-assertj:${allureVersion}")
     //testImplementation("io.qameta.allure:allure-java-commons:${allureVersion}")
 }
+

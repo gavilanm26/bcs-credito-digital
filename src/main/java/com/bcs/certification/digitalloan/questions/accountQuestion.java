@@ -17,13 +17,25 @@ public class accountQuestion implements Question {
 
     @Override
     public Object answeredBy(Actor actor) {
-        WaitUntil.the(accountsUI.TXT_NO_ACCOUNTS, WebElementStateMatchers.isVisible())
-            .forNoMoreThan(9000)
-            .seconds();
 
-        return Text.of(accountsUI.TXT_NO_ACCOUNTS)
-            .answeredBy(actor)
-            .equals(validationText);
+        if(validationText.equals("Seleccionar cuenta")){
+            WaitUntil.the(accountsUI.TEXT_VALIDATE_ACCOUNT, WebElementStateMatchers.isVisible())
+                .forNoMoreThan(2000)
+                .seconds();
+
+            return Text.of(accountsUI.TEXT_VALIDATE_ACCOUNT)
+                .answeredBy(actor)
+                .equals(validationText);
+        }
+        else {
+            WaitUntil.the(accountsUI.TXT_NO_ACCOUNTS, WebElementStateMatchers.isVisible())
+                .forNoMoreThan(2000)
+                .seconds();
+
+            return Text.of(accountsUI.TXT_NO_ACCOUNTS)
+                .answeredBy(actor)
+                .equals(validationText);
+        }
     }
     public static accountQuestion accountQuestion(String validationText){
         return new accountQuestion(validationText);

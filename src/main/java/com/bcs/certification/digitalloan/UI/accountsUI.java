@@ -7,28 +7,33 @@ public class accountsUI {
     public static final Target TEXT_VALIDATE_ACCOUNT =
         Target.the("confirm that you are on the account screen")
             .locatedBy("//P[@class='font-light'][text()='Seleccionar cuenta']"
-            );
+        );
     public static final Target SELECT_ACCOUNT =
         Target.the("Select account")
-            .locatedBy("(//DIV[@class='flex justify-between items-center'])[1]"
-            );
-    public static final Target CHECK_AUTHORIZATION =
-        Target.the("automatic debit authorization")
-            .locatedBy("(//SPAN[@class='checkmark ml-2 mr-2 border border-secondary-200 mt-1'])[2]"
-            );
+            .locatedBy("//div[@itemprop='bankAccountType']"
+        );
+    public static final Target YES_I_AUTHORIZE =
+        Target.the("if I authorize the automatic debit")
+            .locatedBy("/html/body/div[1]/div/div[3]/div[2]/div/div/label[2]/span"
+        );
+
+    public static final Target I_DO_NOT_AUTHORIZE =
+        Target.the("I do not authorize automatic debit\n")
+            .locatedBy("/html/body/div[1]/div/div[3]/div[2]/div/div/label[2]/span"
+        );
 
     public static final Target BTN_CONTINUO_ACCOUNT =
-        Target.the("Continuo after select account")
-            .locatedBy("//BUTTON[@id='btn-accounts']"
-            );
+        Target.the("Bead button")
+            .locatedBy("//*[@id='btn-accounts']"
+        );
 
     public static final Target TXT_NO_ACCOUNTS =
-            Target.the("No accounts")
-                    .locatedBy("//p[contains(@class, 'pb-[70px]')]"
-                    );
+        Target.the("No accounts")
+            .locatedBy("//p[contains(@class, 'pb-[70px]')]"
+        );
 
     public static final Target BTN_NO_ACCOUNTS =
-            Target.the("Button no accounts")
-                    .locatedBy("//*[@id='btn-too-many-tries']"
-                    );
+        Target.the("Button no accounts")
+            .locatedBy("//*[@id='btn-too-many-tries']"
+        );
 }

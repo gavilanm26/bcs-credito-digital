@@ -7,20 +7,19 @@ import com.bcs.certification.digitalloan.tasks.login;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+
 import net.serenitybdd.screenplay.GivenWhenThen;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 @SuppressWarnings("unchecked")
 public class e2eLoginStep {
-
     @Given("^I enter the digital friend credit url. (.*)$")
-    public void iEnterTheDigitalFriendUrl(String textLanding) {
+    public void  iEnterTheDigitalFriendUrl(String textLanding) {
         landingStep landing = new landingStep();
         landing.iEnteredTheOnboardingUrl();
         landing.iClickTheFirstButtonIWantMyLoan(textLanding);
     }
-
 
     @When("^I select the type of document and the number. (.*), (.*), (.*)$")
     public void iSelectTheTypeOfDocumentAndTheNumber(String textLogin, String type, String number) {
@@ -67,10 +66,6 @@ public class e2eLoginStep {
 
     @Then("^I can see the offer customization screen. (.*)$")
     public void iCanSeeTheOfferCustomizationScreen(String textOffer) {
-        String loader = "validando";
-        theActorInTheSpotlight().should(
-                GivenWhenThen.seeThat(loaderQuestion.loader(loader))
-        );
         theActorInTheSpotlight().should(
             GivenWhenThen.seeThat(offerQuestion.offerQuestion(textOffer))
         );
