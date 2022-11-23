@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = {"src/test/resources/features/preApproved/e2e-accounts.feature"},
         glue = {"com.bcs.certification.digitalloan.stepdefinitions"},
         monochrome = true, snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@noAccounts"
+        tags = "@accounts"
 )
 public class e2eAccountsRunner {
 }

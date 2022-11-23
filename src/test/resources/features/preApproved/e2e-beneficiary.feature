@@ -1,24 +1,24 @@
 #Author
-  #Mauricio Gavilan
-  #Quality Engineer
+  # Mauricio Gavilan
+  # quality engineer
 
-Feature: validations of the offer customization screen
+Feature: validations on the beneficiary screen
 
   As: a bank customer
-  I want: validate if I have a current offer
-  To: know if I can modify the offer
+  I want to: register my beneficiaries
+  To: continue the flow of credit
 
-  @successOffer
-  Scenario Outline: Success offer
+  @1Beneficiary
+  Scenario Outline: Registration of 1 beneficiary
     Given I enter the digital friend credit url. <textOnboarding>
     When  I select the type of document and the number. <textLogin>, <idType>, <idNumber>
     And I enter the correct password and click the start button. <textPassword>, <Password>
     And I wait for the page to load. <loader>
     Then I can see the offer customization screen. <textOffer>
-    And I click the continue button.
+    When I click the continue button.
     Then I can see the select account screen. <txtAccount>
 
     Examples:
       | textOnboarding | textLogin | idType | idNumber | textPassword | Password | loader | textOffer | txtAccount |
-    ##@externaldata@./src/test/resources/dataDriven/preApproved.xlsx@offer
-|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|1013583153|Por su seguridad|ibcs0011|validando|Personalice su oferta|Seleccionar cuenta|
+            ##@externaldata@./src/test/resources/datadriven/preApproved.xlsx@accounts
+|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|1013583153|Por su seguridad|ibcs0011|validando|Personalice su oferta|Seleccionar cuenta|Seguro de vida|

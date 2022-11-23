@@ -7,12 +7,12 @@ import org.junit.runner.RunWith;
 @SuppressWarnings("NewClassNamingConvention")
 @RunWith(customRunner.class)
 @CucumberOptions(
-        features = {"src/test/resources/features/preApproved/happyPathCedula.feature"},
+        features = {"src/test/resources/features/preApproved/e2e-pre-approved.feature"},
         glue = {"com.bcs.certification.digitalloan.stepdefinitions"},
         monochrome = true, snippets = CucumberOptions.SnippetType.CAMELCASE,
         tags = "@happyPath"
 )
-public class happyPathCedulaRunner {
+public class e2ePreApprovedRunner {
 
 
 }

@@ -2,7 +2,7 @@
   #Mauricio Gavilan
   #Quality Engineer
 
-  Feature: Validate if there is any product pending payment
+  Feature: delinquent customer screen validations
 
     As: a bank customer
     I want to: know if I have a product pending payment

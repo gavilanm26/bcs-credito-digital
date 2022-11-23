@@ -29,12 +29,12 @@ public class accountQuestion implements Question {
         }
         else {
             WaitUntil.the(accountsUI.TXT_NO_ACCOUNTS, WebElementStateMatchers.isVisible())
-                .forNoMoreThan(2000)
+                .forNoMoreThan(4000)
                 .seconds();
 
             return Text.of(accountsUI.TXT_NO_ACCOUNTS)
                 .answeredBy(actor)
-                .equals(validationText);
+                .contains(validationText);
         }
     }
     public static accountQuestion accountQuestion(String validationText){

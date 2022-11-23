@@ -1,7 +1,7 @@
 #Author
 #Mauricio Gavilan
 
-Feature: onboarding screen validation Bank Caja Social - digital loan
+Feature: landing screen validations
 
   As: a bank customer
   I want: be on the onboarding screen

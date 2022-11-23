@@ -12,16 +12,17 @@ Feature: complete process to acquire a digital loan
 
   @happyPath
   Scenario Outline: digital loan
-    When I know the conditions and benefits of the offer and I click on Verifique aqui <textOnboarding>
-    And I select id type <idType> and I enter the user name <idNumber>, I enter password <Password> I click the button I want it <textLogin>
-    And being in the offer I click on the continue button <textOffer>
-    And I select an account and click the continue button <textAccount>
-    And I Select how many beneficiaries I want to enter <number>, I enter the first name <firstName>, last name <lastName>, relationship <relation>, percentage <percentage> and click continue <textBeneficiaries>
-    And I verify the information <textSummary>
-    And I read the promissory note and click on it promissory note signature button <textPromissoryNote>
-    And I enter the number in the OTP <otp>, <textOtp>
-    And I qualify the experience <qualification>, <textQualify>
-    Then I can see the congratulations message <textCongratulations>
+    When I enter the digital friend credit url. <textOnboarding>
+    And I select the type of document and the number. <textLogin>, <idType>, <idNumber>
+    And I enter the correct password and click the start button. <textPassword>, <Password>
+    And I wait for the page to load. <loader>
+    And I can see the offer customization screen. <textOffer>
+    And I click the continue button.
+    And I can see the select account screen. <txtAccount>
+    And I select one of the accounts and I click continue.
+    And I can see the beneficiary screen <txtBeneficiary>
+
+    Then
 
     Examples:
       | textOnboarding | textLogin | idType |  idNumber | Password | textOffer | textAccount | number | firstName | lastName | relation | percentage | textBeneficiaries | textSummary | textPromissoryNote | otp | textOtp | qualification | textQualify | textCongratulations |

@@ -1,7 +1,7 @@
 #Author
         #Mauricio Gavilan
 
-Feature: Check if you have digital channels or not
+Feature: screen validations digital channels
 
   As: a bank customer
   I want to: know if I have digital channels

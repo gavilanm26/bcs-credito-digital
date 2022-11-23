@@ -1,7 +1,7 @@
 #Author
 #Mauricio Gavilan
 
-Feature: login screen validation Bank Caja Social - digital loan
+Feature: login screen validations
 
   As: a bank customer
   I want: to be on the login screen
@@ -18,7 +18,7 @@ Feature: login screen validation Bank Caja Social - digital loan
     Examples:
       | textOnboarding | textLogin | idType | idNumber | textPassword | Password | loader | textOffer |
     ##@externaldata@./src/test/resources/dataDriven/preApproved.xlsx@successLogin
-|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|94387989|Por su seguridad|ibcs0011|validando|Personalice su oferta|
+|Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|1013583153|Por su seguridad|ibcs0011|validando|Personalice su oferta|
 
 
   @validateMessages
