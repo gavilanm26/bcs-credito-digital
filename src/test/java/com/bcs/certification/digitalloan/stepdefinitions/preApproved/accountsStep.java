@@ -1,6 +1,7 @@
 package com.bcs.certification.digitalloan.stepdefinitions.preApproved;
 
 import com.bcs.certification.digitalloan.questions.accountQuestion;
+import com.bcs.certification.digitalloan.tasks.accounts;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -19,14 +20,11 @@ public class accountsStep {
         );
     }
 
-    @When("I select an account.")
-    public void iSelectAnAccount() {
-
-    }
-
-    @And("I accept the automatic debit.")
-    public void iAcceptTheAutomaticDebit() {
-
+    @When("I select an account and I accept the automatic debit.")
+    public void iSelectAnAccountAndIAcceptTheAutomaticDebit() {
+        theActorInTheSpotlight().wasAbleTo(
+            accounts.acountsSelect()
+        );
     }
 
     @Then("I can see the beneficiary screen. (.*)$")

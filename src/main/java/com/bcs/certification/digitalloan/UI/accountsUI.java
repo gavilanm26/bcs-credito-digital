@@ -10,16 +10,16 @@ public class accountsUI {
         );
     public static final Target SELECT_ACCOUNT =
         Target.the("Select account")
-            .locatedBy("//div[@itemprop='bankAccountType']"
+            .locatedBy("(//div[@itemprop='bankAccountType']//div)[3]"
         );
     public static final Target YES_I_AUTHORIZE =
         Target.the("if I authorize the automatic debit")
-            .locatedBy("/html/body/div[1]/div/div[3]/div[2]/div/div/label[2]/span"
+            .locatedBy("//input[@id='tax-yes']/following-sibling::span[1]"
         );
 
     public static final Target I_DO_NOT_AUTHORIZE =
-        Target.the("I do not authorize automatic debit\n")
-            .locatedBy("/html/body/div[1]/div/div[3]/div[2]/div/div/label[2]/span"
+        Target.the("I do not authorize automatic debit")
+            .locatedBy("//input[@id='tax-no']/following-sibling::span[1]"
         );
 
     public static final Target BTN_CONTINUO_ACCOUNT =

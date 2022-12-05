@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = {"src/test/resources/features/preApproved/e2e-login.feature"},
         glue = {"com.bcs.certification.digitalloan.stepdefinitions"},
         monochrome = true, snippets =CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@successLogin"
+        tags = "@regressionTests"
 )
 public class e2eLoginRunner {
 }

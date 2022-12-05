@@ -7,7 +7,7 @@ Feature: login screen validations
   I want: to be on the login screen
   To: perform all validations
 
-  @successLogin
+  @successLogin @regressionTests
   Scenario Outline: Success login
     Given I enter the digital friend credit url. <textOnboarding>
     When  I select the type of document and the number. <textLogin>, <idType>, <idNumber>
@@ -21,7 +21,7 @@ Feature: login screen validations
 |Le damos la bienvenida a|Bienvenido a|Cédula de ciudadanía|1013583153|Por su seguridad|ibcs0011|validando|Personalice su oferta|
 
 
-  @validateMessages
+  @validateMessages @regressionTests
   Scenario Outline: Validation messages for the document number
     Given I enter the digital friend credit url. <textOnboarding>
     When  I select the type of document and the number to validate messages. <textLogin>, <idType>, <idNumber>
@@ -41,7 +41,7 @@ Feature: login screen validations
 |Le damos la bienvenida a|Bienvenido a|Usuario|mauricio23456$|No se permiten: ñ caracteres especiales ni espacios|
 
 
-  @validateModal
+  @validateModal @regressionTests
   Scenario Outline: validate messages when they are bad data and blocking
     Given I enter the digital friend credit url. <textOnboarding>
     When  I select the type of document and the number. <textLogin>, <idType>, <idNumber>

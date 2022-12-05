@@ -17,8 +17,7 @@ Feature: validations on the accounts screen
     Then I can see the offer customization screen. <textOffer>
     When I click the continue button.
     Then I can see the select account screen. <txtAccount>
-    When I select an account.
-    And  I accept the automatic debit.
+    When I select an account and I accept the automatic debit.
     And  I click the continue button.
     Then I can see the beneficiary screen. <txtBeneficiary>
 

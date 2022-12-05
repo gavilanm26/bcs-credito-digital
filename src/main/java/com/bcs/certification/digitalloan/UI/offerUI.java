@@ -36,7 +36,7 @@ public class offerUI {
 
     public static final Target BTN_I_WANT_IT =
         Target.the("BTN CONTINUE")
-            .locatedBy("//BUTTON[@id='btn-offer']"
+            .locatedBy("//*[@id='btn-offer']"
         );
 
 }
