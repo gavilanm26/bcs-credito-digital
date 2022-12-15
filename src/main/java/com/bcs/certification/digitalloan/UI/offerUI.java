@@ -34,9 +34,9 @@ public class offerUI {
             .locatedBy("//BUTTON[@id='term-mayor']"
         );
 
-    public static final Target BTN_I_WANT_IT =
-        Target.the("BTN CONTINUE")
-            .locatedBy("//*[@id='btn-offer']"
+    public static final Target BTN_CONTINUE =
+        Target.the("BTN Continue")
+            .locatedBy("//BUTTON[@id='btn-offer']"
         );
 
 }

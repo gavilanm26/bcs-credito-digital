@@ -19,8 +19,8 @@ public class channelsQuestion implements Question {
     @Override
     public Object answeredBy(Actor actor) {
         WaitUntil.the(loginUI.TEXT_VALIDATE_PASSWORD, WebElementStateMatchers.isVisible())
-            .forNoMoreThan(15)
-            .seconds();
+            .forNoMoreThan(18000)
+                .milliseconds();
 
         return Text.of(loginUI.TEXT_VALIDATE_PASSWORD)
             .answeredBy(actor)

@@ -15,7 +15,7 @@ Feature: validations of the offer customization screen
     And I enter the correct password and click the start button. <textPassword>, <Password>
     And I wait for the page to load. <loader>
     Then I can see the offer customization screen. <textOffer>
-    And I click the continue button.
+    When I click the continue button.
     Then I can see the select account screen. <txtAccount>
 
     Examples:

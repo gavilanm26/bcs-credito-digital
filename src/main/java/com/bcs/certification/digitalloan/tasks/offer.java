@@ -11,7 +11,7 @@ public class offer implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-            Click.on(offerUI.BTN_I_WANT_IT)
+            Click.on(offerUI.BTN_CONTINUE)
         );
     }
 
